@@ -27,7 +27,7 @@
       public var ThirdExtraInfoPanel_mc:MovieClip;
 
       public var BGSCodeObj:Object;
-
+      public var ConsoleHistoryObj:Object;
       public var CommandEntry:TextField;
 
       public var Background:MovieClip;
@@ -55,7 +55,7 @@
 
       public var baseLastChangeModName:TextField;
 
-      private const PREVIOUS_COMMANDS:uint = 32;
+      public var PREVIOUS_COMMANDS:uint = 128;
 
       private var HistoryCharBufferSize:uint = 8192;
 
@@ -84,6 +84,7 @@
          this.Commands = new Array();
          super();
          this.BGSCodeObj = new Object();
+         this.ConsoleHistoryObj = new Object();
          Extensions.enabled = true;
 
          // this.FirstExtraInfoPanel_mc.filterer.itemFilter = uint(2);
@@ -157,9 +158,7 @@
 
       internal function onExtraInfoListSelectionChange(e:flash.events.Event):*
       {
-         trace("onFeatureSelectionChange");
          var list:ExtraInfoList = e.target as ExtraInfoList;
-         trace(list.ID);
          var selectedIndex:* = null;
          var currentEntry:Object = null;
          var arrObj:* = null;
@@ -264,7 +263,6 @@
          }
          catch (err:Error)
          {
-            trace("Failed to get extra data...");
          }
       }
 
@@ -338,7 +336,6 @@
          }
          catch (err:Error)
          {
-            trace("Failed to get base data...");
          }
 
       }
@@ -535,6 +532,20 @@
          this.CommandHistory.scrollV = this.CommandHistory.maxScrollV;
       }
 
+      public function SetPreviousCommandsSize(size:uint):*
+      {
+         this.PREVIOUS_COMMANDS = size;
+      }
+
+      public function AddCommandToHistory(param1:String):*
+      {
+         if (this.Commands.length >= this.PREVIOUS_COMMANDS)
+         {
+            this.Commands.shift();
+         }
+         this.Commands.push(param1);
+      }
+
       public function SetCommandPrompt(param1:String):*
       {
          GlobalFunc.SetText(this.CommandPrompt_tf, param1, false);
@@ -558,20 +569,22 @@
          var _loc3_:int = 0;
          if (param1.keyCode == Keyboard.ENTER || param1.keyCode == Keyboard.NUMPAD_ENTER)
          {
-            if (this.Commands.length >= this.PREVIOUS_COMMANDS)
+            if (this.ConsoleHistoryObj.saveCommand)
             {
-               this.Commands.shift();
+               // savecommand then conditionally calls AddCommandToHistory
+               this.ConsoleHistoryObj.saveCommand(this.CommandEntry.text);
             }
-            this.Commands.push(this.CommandEntry.text);
+            else
+            {
+               this.AddCommandToHistory(this.CommandEntry.text);
+            }
             try
             {
                this.BGSCodeObj.executeCommand(this.CommandEntry.text);
                this.ResetCommandEntry();
-               root.f4se.plugins.BetterConsole.WriteLog("Execute command.");
             }
             catch (e:Error)
             {
-               trace("Failed to write log.");
             }
          }
          else if (param1.keyCode == Keyboard.PAGE_UP)
@@ -585,9 +598,9 @@
             _loc2_ = this.CommandHistory.bottomScrollV - this.CommandHistory.scrollV;
             _loc3_ = this.CommandHistory.scrollV + _loc2_;
             this.CommandHistory.scrollV = _loc3_ <= this.CommandHistory.maxScrollV ? int(_loc3_) : int(this.CommandHistory.maxScrollV);
-            trace("page down key is pressed...");
+            // trace("page down key is pressed...");
          }
-         else if (param1.keyCode == Keyboard.SHIFT)
+         else if (root.f4se && root.f4se.plugins && root.f4se.plugins.BetterConsole && param1.keyCode == Keyboard.F1)
          {
             showExtraInfoWindow = !showExtraInfoWindow;
             if (showExtraInfoWindow)
@@ -617,7 +630,6 @@
                }
                catch (e:Error)
                {
-                  trace("Failed.");
                }
             }
             else
