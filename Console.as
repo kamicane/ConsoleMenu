@@ -532,7 +532,7 @@
          this.CommandHistory.scrollV = this.CommandHistory.maxScrollV;
       }
 
-      public function SetPreviousCommandsSize(size:uint):*
+      public function SetHistorySize(size:uint):*
       {
          this.PREVIOUS_COMMANDS = size;
       }
