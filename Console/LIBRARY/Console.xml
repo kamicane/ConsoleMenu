@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Console" itemID="5999f623-00000276" linkageExportForAS="true" linkageClassName="Console" lastModified="1772392783" lastUniqueIdentifier="11">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Console" itemID="5999f623-00000276" linkageExportForAS="true" linkageClassName="Console" lastModified="1772406113" lastUniqueIdentifier="11">
   <timeline>
     <DOMTimeline name="Console" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-467&lt;/guideline&gt;&lt;guideline direction="h"&gt;-433&lt;/guideline&gt;&lt;guideline direction="h"&gt;-747&lt;/guideline&gt;&lt;guideline direction="h"&gt;-1&lt;/guideline&gt;&lt;guideline direction="h"&gt;-719&lt;/guideline&gt;&lt;guideline direction="h"&gt;-182&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
@@ -38,93 +38,93 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="refName" fontRenderingMode="device" width="546" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="refName" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="732" ty="-321.45"/>
+                    <Matrix tx="702" ty="-300"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
-                <DOMDynamicText name="refFormType" fontRenderingMode="device" width="546" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="refFormType" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="732" ty="-281.45"/>
+                    <Matrix tx="702" ty="-260"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
-                <DOMDynamicText name="refFormID" fontRenderingMode="device" width="546" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="refFormID" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="732" ty="-241.45"/>
+                    <Matrix tx="702" ty="-220"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
-                <DOMDynamicText name="baseFormID" fontRenderingMode="device" width="546" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="baseFormID" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="732" ty="-201.45"/>
+                    <Matrix tx="702" ty="-180"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
-                <DOMDynamicText name="baseDefineModName" fontRenderingMode="device" width="746" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="baseDefineModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="532" ty="-121.45"/>
+                    <Matrix tx="502" ty="-100"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
-                <DOMDynamicText name="refDefineModName" fontRenderingMode="device" width="746" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="refDefineModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="532" ty="-161.45"/>
+                    <Matrix tx="502" ty="-140"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                 </DOMDynamicText>
-                <DOMDynamicText name="baseLastChangeModName" fontRenderingMode="device" width="746" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="baseLastChangeModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="532" ty="-81.45"/>
+                    <Matrix tx="502" ty="-60"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -137,15 +137,15 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="CommandPrompt_tf" fontRenderingMode="device" width="54" height="26.4" isSelectable="false">
+                <DOMDynamicText name="CommandPrompt_tf" fontRenderingMode="device" width="32" height="26" isSelectable="false">
                   <matrix>
-                    <Matrix tx="72" ty="-83"/>
+                    <Matrix tx="32" ty="-31"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>----</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="1" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -158,15 +158,15 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="CurrentSelection" fontRenderingMode="device" width="1136" height="30.3" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="CurrentSelection" fontRenderingMode="device" width="1136" height="20" isSelectable="false" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="72" ty="-321.45"/>
+                    <Matrix tx="32" ty="-321"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="2" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="15.85" bitmapSize="240" face="$ConsoleFont*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -179,15 +179,15 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="CommandHistory" fontRenderingMode="device" width="1136" height="195.65" isSelectable="false" lineType="multiline">
+                <DOMDynamicText name="CommandHistory" fontRenderingMode="device" width="1216" height="256" isSelectable="false" lineType="multiline">
                   <matrix>
-                    <Matrix tx="72" ty="-286"/>
+                    <Matrix tx="32" ty="-296"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="2" lineHeight="23.75" size="18" bitmapSize="360" face="$DebugTextFont*" fillColor="#999999"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$DebugTextFont*" fillColor="#999999"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -196,19 +196,19 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="CommandEntryText" color="#943EE8" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="CommandEntryText" color="#943EE8" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMInputText name="CommandEntry" fontRenderingMode="device" width="1006" height="38.25">
+                <DOMInputText name="CommandEntry" fontRenderingMode="device" width="1180" height="26">
                   <matrix>
-                    <Matrix tx="132" ty="-83"/>
+                    <Matrix tx="68" ty="-31"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="1" lineHeight="26.4" size="20" bitmapSize="400" face="$ConsoleFont*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#FFFFFF"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -217,11 +217,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#7F42FB" autoNamed="false">
+        <DOMLayer name="Background" color="#7F42FB" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Background" name="Background" centerPoint3DX="640" centerPoint3DY="170">
+                <DOMSymbolInstance libraryItemName="Background" name="Background" selected="true" centerPoint3DX="640" centerPoint3DY="170">
                   <matrix>
                     <Matrix d="0.999984741210938"/>
                   </matrix>

@@ -92,9 +92,18 @@
 
          this.CurrentSelectionYOffset = this.Background.height + this.CurrentSelection.y;
          this.TextXOffset = this.CommandEntry.x;
+
+         // this is always 1280x720
          this.OriginalHeight = stage.stageHeight;
          this.OriginalWidth = stage.stageWidth;
-         this.ScreenPercent = 100 * (this.height / stage.stageHeight);
+         trace("[Console:CTOR] og_height = " + this.OriginalHeight + " og_width = " + this.OriginalWidth);
+
+         // this starts at 98~ because the Console class mc is 712 with betterconsole
+         // this.ScreenPercent = 100 * (this.height / stage.stageHeight);
+         // setting to 40 (percentage of screen covered by console at 4k)
+         // this gets reset by code immediately so it doesn't matter
+         this.ScreenPercent = 40;
+         trace("[Console:CTOR] og_screenpercent = " + this.ScreenPercent);
 
          this.PreviousCommandOffset = 0;
          this.Shown = false;
@@ -141,7 +150,7 @@
          TextFieldEx.setNoTranslate(this.refName, true);
 
          stage.align = StageAlign.BOTTOM_LEFT;
-         stage.scaleMode = StageScaleMode.NO_SCALE;
+         // stage.scaleMode = StageScaleMode.SHOW_ALL;
          stage.addEventListener(Event.RESIZE, this.onResize);
 
          addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
@@ -359,102 +368,116 @@
 
       public function set textSize(param1:uint):*
       {
+         // called by native code: noop
          trace('[Console] set textSize ' + param1);
 
-         var _loc2_:TextFormat = null;
+         // param1 = 10;
 
-         _loc2_ = this.CurrentSelection.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1);
-         this.CurrentSelection.setTextFormat(_loc2_);
-         this.CurrentSelection.defaultTextFormat = _loc2_;
+         // var _loc2_:TextFormat = null;
 
-         _loc2_ = this.CommandHistory.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         this.CommandHistory.setTextFormat(_loc2_);
-         this.CommandHistory.defaultTextFormat = _loc2_;
+         // _loc2_ = this.CurrentSelection.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1);
+         // this.CurrentSelection.setTextFormat(_loc2_);
+         // this.CurrentSelection.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.CommandEntry.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1);
-         this.CommandEntry.setTextFormat(_loc2_);
-         this.CommandEntry.defaultTextFormat = _loc2_;
+         // _loc2_ = this.CommandHistory.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // this.CommandHistory.setTextFormat(_loc2_);
+         // this.CommandHistory.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.refName.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.refName.setTextFormat(_loc2_);
-         this.refName.defaultTextFormat = _loc2_;
+         // _loc2_ = this.CommandEntry.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1);
+         // this.CommandEntry.setTextFormat(_loc2_);
+         // this.CommandEntry.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.refFormType.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.refFormType.setTextFormat(_loc2_);
-         this.refFormType.defaultTextFormat = _loc2_;
+         // _loc2_ = this.refName.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.refName.setTextFormat(_loc2_);
+         // this.refName.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.refFormID.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.refFormID.setTextFormat(_loc2_);
-         this.refFormID.defaultTextFormat = _loc2_;
+         // _loc2_ = this.refFormType.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.refFormType.setTextFormat(_loc2_);
+         // this.refFormType.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.baseFormID.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.baseFormID.setTextFormat(_loc2_);
-         this.baseFormID.defaultTextFormat = _loc2_;
+         // _loc2_ = this.refFormID.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.refFormID.setTextFormat(_loc2_);
+         // this.refFormID.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.baseDefineModName.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.baseDefineModName.setTextFormat(_loc2_);
-         this.baseDefineModName.defaultTextFormat = _loc2_;
+         // _loc2_ = this.baseFormID.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.baseFormID.setTextFormat(_loc2_);
+         // this.baseFormID.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.refDefineModName.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.refDefineModName.setTextFormat(_loc2_);
-         this.refDefineModName.defaultTextFormat = _loc2_;
+         // _loc2_ = this.baseDefineModName.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.baseDefineModName.setTextFormat(_loc2_);
+         // this.baseDefineModName.defaultTextFormat = _loc2_;
 
-         _loc2_ = this.baseLastChangeModName.defaultTextFormat;
-         _loc2_.size = Math.max(1, param1 - 2);
-         _loc2_.align = "right";
-         this.baseLastChangeModName.setTextFormat(_loc2_);
-         this.baseLastChangeModName.defaultTextFormat = _loc2_;
+         // _loc2_ = this.refDefineModName.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.refDefineModName.setTextFormat(_loc2_);
+         // this.refDefineModName.defaultTextFormat = _loc2_;
 
-         this.PositionTextFields();
+         // _loc2_ = this.baseLastChangeModName.defaultTextFormat;
+         // _loc2_.size = Math.max(1, param1 - 2);
+         // _loc2_.align = "right";
+         // this.baseLastChangeModName.setTextFormat(_loc2_);
+         // this.baseLastChangeModName.defaultTextFormat = _loc2_;
+
+         // this.PositionTextFields();
       }
 
-      public function set size(param1:Number):*
+      public function set size(percent:Number):*
       {
-         trace('[Console] set size ' + param1);
+         // this is called by native code also.
+         // we just no-op it.
+         // code has been moved to onResize
+         trace('[Console] set size ' + percent);
 
-         this.ScreenPercent = param1;
-         param1 = param1 / 100;
-         this.Background.height = stage.stageHeight * param1; // * 2;
-         this.PositionTextFields();
+         // // var stageHeight:Number = stage.stageHeight;
+         // var stageHeight:Number = this.OriginalHeight;
 
-         this.FirstExtraInfoPanel_mc.y = this.SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stage.stageHeight;
-         this.FirstExtraInfoPanel_mc.height = this.SecondExtraInfoPanel_mc.height = this.ThirdExtraInfoPanel_mc.height = stage.stageHeight - Background.height - 10;
-         this.FirstExtraInfoPanel_mc.width = this.SecondExtraInfoPanel_mc.width = this.ThirdExtraInfoPanel_mc.width = FirstExtraInfoPanel_mc.height / 2;
+         // this.ScreenPercent = percent;
+         // this.Background.height = stageHeight * (percent / 100); // * 2;
 
-         this.SecondExtraInfoPanel_mc.x = this.FirstExtraInfoPanel_mc.x + this.FirstExtraInfoPanel_mc.width * 1.05;
-         this.ThirdExtraInfoPanel_mc.x = this.SecondExtraInfoPanel_mc.x + this.SecondExtraInfoPanel_mc.width * 1.05;
+         // this.PositionTextFields();
+
+         // this.FirstExtraInfoPanel_mc.y = this.SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
+         // this.FirstExtraInfoPanel_mc.height = this.SecondExtraInfoPanel_mc.height = this.ThirdExtraInfoPanel_mc.height = stageHeight - Background.height - 10;
+         // this.FirstExtraInfoPanel_mc.width = this.SecondExtraInfoPanel_mc.width = this.ThirdExtraInfoPanel_mc.width = FirstExtraInfoPanel_mc.height / 2;
+
+         // this.SecondExtraInfoPanel_mc.x = this.FirstExtraInfoPanel_mc.x + this.FirstExtraInfoPanel_mc.width * 1.05;
+         // this.ThirdExtraInfoPanel_mc.x = this.SecondExtraInfoPanel_mc.x + this.SecondExtraInfoPanel_mc.width * 1.05;
 
       }
 
       public function PositionTextFields():*
       {
-         this.CurrentSelection.y = this.CurrentSelectionYOffset - this.Background.height;
-         this.CommandHistory.y = this.CurrentSelection.y + this.CurrentSelection.height;
-         this.CommandHistory.height = this.CommandEntry.y - this.CommandHistory.y;
+         // var stageHeight:Number = stage.stageHeight;
+         trace("[Console:PositionTextFields]");
 
-         baseLastChangeModName.height = baseDefineModName.height = refDefineModName.height = baseFormID.height = refFormID.height = refFormType.height = refName.height = stage.stageHeight / 28;
-         this.refName.y = this.CurrentSelection.y + this.CurrentSelection.height;
-         this.refFormType.y = this.refName.y + this.refName.height * 1.1;
-         this.refFormID.y = this.refFormType.y + this.refFormType.height * 1.1;
-         this.baseFormID.y = this.refFormID.y + this.refFormID.height * 1.1;
-         this.refDefineModName.y = this.baseFormID.y + this.baseFormID.height * 1.1;
-         this.baseDefineModName.y = this.refDefineModName.y + this.refDefineModName.height * 1.1;
-         this.baseLastChangeModName.y = this.baseDefineModName.y + this.baseDefineModName.height * 1.1;
+         var stageHeight:Number = this.OriginalHeight;
+
+         // this.CurrentSelection.y = this.CurrentSelectionYOffset - this.Background.height;
+         // this.CommandHistory.y = this.CurrentSelection.y + this.CurrentSelection.height;
+         // this.CommandHistory.height = this.CommandEntry.y - this.CommandHistory.y;
+
+         // baseLastChangeModName.height = baseDefineModName.height = refDefineModName.height = baseFormID.height = refFormID.height = refFormType.height = refName.height = stageHeight / 28;
+         // this.refName.y = this.CurrentSelection.y + this.CurrentSelection.height;
+         // this.refFormType.y = this.refName.y + this.refName.height * 1.1;
+         // this.refFormID.y = this.refFormType.y + this.refFormType.height * 1.1;
+         // this.baseFormID.y = this.refFormID.y + this.refFormID.height * 1.1;
+         // this.refDefineModName.y = this.baseFormID.y + this.baseFormID.height * 1.1;
+         // this.baseDefineModName.y = this.refDefineModName.y + this.refDefineModName.height * 1.1;
+         // this.baseLastChangeModName.y = this.baseDefineModName.y + this.baseDefineModName.height * 1.1;
 
       }
 
@@ -572,10 +595,11 @@
 
       public function SetCommandPrompt(param1:String):*
       {
-         trace("[Console] SetCommandPrompt `" + param1 + "`")
+         trace("[Console] SetCommandPrompt `" + param1 + "`");
 
          GlobalFunc.SetText(this.CommandPrompt_tf, param1, false);
-         this.CommandEntry.x = this.CommandPrompt_tf.x + this.CommandPrompt_tf.getLineMetrics(0).width + 10;
+         this.CommandEntry.x = this.CommandPrompt_tf.x + this.CommandPrompt_tf.getLineMetrics(0).width + 5;
+         this.CommandEntry.width = this.OriginalWidth - this.CommandEntry.x - 30;
       }
 
       public function ClearHistory():*
@@ -666,17 +690,37 @@
       {
          trace('[Console] onResize');
 
-         this.Background.width = stage.stageWidth;
-         this.CommandEntry.width = this.CommandHistory.width = this.CurrentSelection.width = stage.stageWidth - this.TextXOffset * 2;
-         this.refName.x = stage.stageWidth - this.refName.width - this.CommandPrompt_tf.x;
-         this.refFormType.x = stage.stageWidth - this.refFormType.width - this.CommandPrompt_tf.x;
-         this.refFormID.x = stage.stageWidth - this.refFormID.width - this.CommandPrompt_tf.x;
-         this.baseFormID.x = stage.stageWidth - this.baseFormID.width - this.CommandPrompt_tf.x;
-         this.refDefineModName.x = stage.stageWidth - this.refDefineModName.width - this.CommandPrompt_tf.x;
-         this.baseDefineModName.x = stage.stageWidth - this.baseDefineModName.width - this.CommandPrompt_tf.x;
-         this.baseLastChangeModName.x = stage.stageWidth - this.baseLastChangeModName.width - this.CommandPrompt_tf.x;
+         // var stageWidth:Number = stage.stageWidth;
+         var stageWidth:Number = this.OriginalWidth;
 
-         this.size = this.ScreenPercent;
+         stage.scaleMode = StageScaleMode.SHOW_ALL;
+         trace("[Console:OnResize] sw= " + stage.stageWidth + ", sh = " + stage.stageHeight);
+
+         // this.Background.width = stageWidth;
+         // this.CommandEntry.width = this.CommandHistory.width = this.CurrentSelection.width = stageWidth - this.TextXOffset * 2;
+
+         // this.refName.x = stageWidth - this.refName.width - this.CommandPrompt_tf.x;
+         // this.refFormType.x = stageWidth - this.refFormType.width - this.CommandPrompt_tf.x;
+         // this.refFormID.x = stageWidth - this.refFormID.width - this.CommandPrompt_tf.x;
+         // this.baseFormID.x = stageWidth - this.baseFormID.width - this.CommandPrompt_tf.x;
+         // this.refDefineModName.x = stageWidth - this.refDefineModName.width - this.CommandPrompt_tf.x;
+         // this.baseDefineModName.x = stageWidth - this.baseDefineModName.width - this.CommandPrompt_tf.x;
+         // this.baseLastChangeModName.x = stageWidth - this.baseLastChangeModName.width - this.CommandPrompt_tf.x;
+
+         // this.size = this.ScreenPercent;
+         var stageHeight:Number = this.OriginalHeight;
+
+         this.ScreenPercent = percent;
+         this.Background.height = stageHeight * (percent / 100); // * 2;
+
+         // this.PositionTextFields();
+
+         this.FirstExtraInfoPanel_mc.y = this.SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
+         this.FirstExtraInfoPanel_mc.height = this.SecondExtraInfoPanel_mc.height = this.ThirdExtraInfoPanel_mc.height = stageHeight - Background.height - 10;
+         // this.FirstExtraInfoPanel_mc.width = this.SecondExtraInfoPanel_mc.width = this.ThirdExtraInfoPanel_mc.width = FirstExtraInfoPanel_mc.height / 2;
+
+         this.SecondExtraInfoPanel_mc.x = this.FirstExtraInfoPanel_mc.x + this.FirstExtraInfoPanel_mc.width * 1.05;
+         this.ThirdExtraInfoPanel_mc.x = this.SecondExtraInfoPanel_mc.x + this.SecondExtraInfoPanel_mc.width * 1.05;
       }
    }
 }

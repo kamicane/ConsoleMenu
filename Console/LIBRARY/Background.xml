@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Background" itemID="5999f62e-00000277" lastModified="1503262254">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Background" itemID="5999f62e-00000277" lastModified="1772405512">
   <timeline>
     <DOMTimeline name="Background">
       <layers>
@@ -20,7 +20,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!25600 -6800|25600 0!25600 0|0 0!0 0|0 -6800!0 -6800|25600 -6800"/>
+                    <Edge fillStyle1="1" edges="!25600 -6800S2|25600 0!25600 0|0 0!0 0|0 -6800!0 -6800|25600 -6800"/>
                   </edges>
                 </DOMShape>
               </elements>
