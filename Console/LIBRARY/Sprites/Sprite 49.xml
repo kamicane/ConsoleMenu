@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/Sprite 49" itemID="566a5a09-000000c5" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/Sprite 49" sourceLastModified="1460164076" lastModified="1460164076" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="Sprite 49">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMShape isFloating="true">
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#9A03FF" alpha="0.988235294117647"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!5680 0|5680 10286!5680 10286|0 10286!0 10286|0 0!0 0|5680 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

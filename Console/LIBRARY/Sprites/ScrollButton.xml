@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/ScrollButton" itemID="566dd07b-0000008c" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/ScrollButton" sourceLastModified="1450037371" lastModified="1450037371" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="ScrollButton">
+      <layers>
+        <DOMLayer name="Layer 2" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Shapes/Shape 44" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

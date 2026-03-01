@@ -1,0 +1,83 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeaturePanel" itemID="5708572d-000000e2" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeaturePanel" sourceLastModified="1503312097" lastModified="1772390653" lastUniqueIdentifier="5" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="FeaturePanel" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;133&lt;/guideline&gt;&lt;/guidelines&gt;'>
+      <layers>
+        <DOMLayer name="ListMC" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMComponentInstance libraryItemName="Sprites/FeatureList" name="List_mc" centerPoint3DX="140.4" centerPoint3DY="268.2" uniqueID="1">
+                  <matrix>
+                    <Matrix a="1.01370239257813" d="0.885604858398438" tx="15" ty="39.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <parametersAsXML><![CDATA[   <property id="listEntryClass">
+      <Inspectable name="listEntryClass" unlocalizedName="listEntryClass" variable="listEntryClass" category="" verbose="0" defaultValue="ExtraInfoListEntry" type="String"/>
+   </property>
+   <property id="numListItems">
+      <Inspectable name="numListItems" unlocalizedName="numListItems" variable="numListItems" category="" verbose="0" defaultValue="19" type="Number"/>
+   </property>
+   <property id="restoreListIndex">
+      <Inspectable name="restoreListIndex" unlocalizedName="restoreListIndex" variable="restoreListIndex" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="textOption">
+      <Inspectable name="textOption" unlocalizedName="textOption" variable="textOption" category="" verbose="0" defaultValue="Shrink To Fit" type="String"/>
+   </property>
+   <property id="verticalSpacing">
+      <Inspectable name="verticalSpacing" unlocalizedName="verticalSpacing" variable="verticalSpacing" category="" verbose="0" defaultValue="0" type="Number"/>
+   </property>
+]]></parametersAsXML>
+                </DOMComponentInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="BracketsExtents" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/Bracket" centerPoint3DX="139.75" centerPoint3DY="521.85">
+                  <matrix>
+                    <Matrix a="2.25430297851563" d="1.76821899414063" tx="4.45" ty="464.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="60" y="18"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Sprites/Bracket" centerPoint3DX="139.7" centerPoint3DY="14.55">
+                  <matrix>
+                    <Matrix a="2.25430297851563" d="-1.76821899414063" tx="4.4" ty="72"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="60" y="18"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/Border" name="background" centerPoint3DX="10.2" centerPoint3DY="66.65">
+                  <matrix>
+                    <Matrix a="2.67373657226563" d="5.18008422851563" tx="6.15" ty="10"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125" redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

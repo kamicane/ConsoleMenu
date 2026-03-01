@@ -1,0 +1,75 @@
+<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeatureList" itemID="566dc58f-00000079" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoList" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureList" sourceLastModified="1460165892" lastModified="1503526107" sourceItemID="00000000-ffffffff" displayAsComponent="false" customIconID="0" persistLivePreview11="true" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true">
+  <timeline>
+    <DOMTimeline name="FeatureList" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;123&lt;/guideline&gt;&lt;/guidelines&gt;'>
+      <layers>
+        <DOMLayer name="ScrollDown" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/ScrollButton" name="ScrollDown" centerPoint3DX="99.25" centerPoint3DY="323">
+                  <matrix>
+                    <Matrix a="-1" d="-1" tx="123.05" ty="542.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ScrollUp" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/ScrollButton" name="ScrollUp" centerPoint3DX="123" centerPoint3DY="-22.3">
+                  <matrix>
+                    <Matrix tx="123.05" ty="-23.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Border" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/Border" name="border" selected="true" centerPoint3DX="-0.3" centerPoint3DY="51.85">
+                  <matrix>
+                    <Matrix a="2.58950805664063" d="5.48500061035156" tx="-4.25" ty="-8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+  <parametersAsXML><![CDATA[   <property id="listEntryClass">
+      <Inspectable name="listEntryClass" unlocalizedName="listEntryClass" variable="listEntryClass" category="" verbose="0" defaultValue="FeatureListEntry" type="String"/>
+   </property>
+   <property id="numListItems">
+      <Inspectable name="numListItems" unlocalizedName="numListItems" variable="numListItems" category="" verbose="0" defaultValue="8" type="Number"/>
+   </property>
+   <property id="restoreListIndex">
+      <Inspectable name="restoreListIndex" unlocalizedName="restoreListIndex" variable="restoreListIndex" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="textOption">
+      <Inspectable name="textOption" unlocalizedName="textOption" variable="textOption" category="" verbose="0" defaultValue="Shrink To Fit" type="String"/>
+   </property>
+   <property id="verticalSpacing">
+      <Inspectable name="verticalSpacing" unlocalizedName="verticalSpacing" variable="verticalSpacing" category="" verbose="0" defaultValue="-2" type="Number"/>
+   </property>
+]]></parametersAsXML>
+</DOMComponentItem>

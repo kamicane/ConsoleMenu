@@ -1,0 +1,72 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/Bracket" itemID="599c8174-00000abf" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/Sprite 22" sourceLastModified="1449810442" lastModified="1503428980" lastUniqueIdentifier="2" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="Bracket" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;28&lt;/guideline&gt;&lt;guideline direction="h"&gt;36&lt;/guideline&gt;&lt;guideline direction="h"&gt;0&lt;/guideline&gt;&lt;/guidelines&gt;'>
+      <layers>
+        <DOMLayer name="Layer 7" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/Line" name="Bottom_mc" centerPoint3DX="60" centerPoint3DY="35.3">
+                  <matrix>
+                    <Matrix tx="1.75" ty="34.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/Sprite 18" name="Right_mc" centerPoint3DX="119" centerPoint3DY="18">
+                  <matrix>
+                    <Matrix tx="118.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="8704">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Sprites/Sprite 20" centerPoint3DX="0.85" centerPoint3DY="30.1">
+                  <matrix>
+                    <Matrix a="0" b="0.0248870849609375" c="-1" d="0" tx="1.5" ty="28.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="58.25" y="0.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Sprites/Sprite 16" name="Left_mc" centerPoint3DX="1" centerPoint3DY="18">
+                  <matrix>
+                    <Matrix tx="0.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Sprites/Sprite 20" centerPoint3DX="119.25" centerPoint3DY="30.1">
+                  <matrix>
+                    <Matrix a="0" b="0.0248870849609375" c="-1" d="0" tx="119.9" ty="28.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="58.25" y="0.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

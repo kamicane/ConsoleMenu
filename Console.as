@@ -347,6 +347,7 @@
 
       public function set historyTextColor(param1:uint):*
       {
+         trace('[Console] set historyTextColor' + param1);
          this.CommandHistory.textColor = param1;
       }
 
@@ -358,6 +359,8 @@
 
       public function set textSize(param1:uint):*
       {
+         trace('[Console] set textSize ' + param1);
+
          var _loc2_:TextFormat = null;
 
          _loc2_ = this.CurrentSelection.defaultTextFormat;
@@ -422,6 +425,8 @@
 
       public function set size(param1:Number):*
       {
+         trace('[Console] set size ' + param1);
+
          this.ScreenPercent = param1;
          param1 = param1 / 100;
          this.Background.height = stage.stageHeight * param1; // * 2;
@@ -455,6 +460,8 @@
 
       public function Show():*
       {
+         trace('[Console] Show');
+
          if (!this.Animating)
          {
             parent.y = this.OriginalHeight;
@@ -473,11 +480,13 @@
 
       public function Hide():*
       {
+         trace('[Console] Hide');
+
          if (!this.Animating)
          {
             (parent as MovieClip).gotoAndPlay("hide_anim");
             stage.focus = null;
-            this.ResetCommandEntry();
+            // this.ResetCommandEntry();
             this.Animating = true;
             this.Hiding = true;
          }
@@ -485,6 +494,8 @@
 
       public function HideComplete():*
       {
+         trace('[Console] HideComplete');
+
          this.Shown = false;
          this.Animating = false;
          this.Hiding = false;
@@ -546,8 +557,23 @@
          this.Commands.push(param1);
       }
 
+      public function ExecuteCommand(param1:String):*
+      {
+         try
+         {
+            this.BGSCodeObj.executeCommand(param1);
+         }
+         catch (e:Error)
+         {
+         }
+
+         this.ResetCommandEntry();
+      }
+
       public function SetCommandPrompt(param1:String):*
       {
+         trace("[Console] SetCommandPrompt `" + param1 + "`")
+
          GlobalFunc.SetText(this.CommandPrompt_tf, param1, false);
          this.CommandEntry.x = this.CommandPrompt_tf.x + this.CommandPrompt_tf.getLineMetrics(0).width + 10;
       }
@@ -571,20 +597,13 @@
          {
             if (this.ConsoleHistoryObj.saveCommand)
             {
-               // savecommand then conditionally calls AddCommandToHistory
+               // saveCommand calls AddCommandToHistory + ExecuteCommand
                this.ConsoleHistoryObj.saveCommand(this.CommandEntry.text);
             }
             else
             {
                this.AddCommandToHistory(this.CommandEntry.text);
-            }
-            try
-            {
-               this.BGSCodeObj.executeCommand(this.CommandEntry.text);
-               this.ResetCommandEntry();
-            }
-            catch (e:Error)
-            {
+               this.ExecuteCommand(this.CommandEntry.text);
             }
          }
          else if (param1.keyCode == Keyboard.PAGE_UP)
@@ -645,6 +664,8 @@
 
       public function onResize():*
       {
+         trace('[Console] onResize');
+
          this.Background.width = stage.stageWidth;
          this.CommandEntry.width = this.CommandHistory.width = this.CurrentSelection.width = stage.stageWidth - this.TextXOffset * 2;
          this.refName.x = stage.stageWidth - this.refName.width - this.CommandPrompt_tf.x;
