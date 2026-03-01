@@ -468,7 +468,7 @@
             (parent as MovieClip).gotoAndPlay("show_anim");
             stage.focus = this.CommandEntry;
             this.Animating = true;
-            this.CommandEntry.setSelection(this.CommandEntry.length, this.CommandEntry.length);
+            this.CommandEntry.setSelection(0, this.CommandEntry.length);
          }
       }
 
