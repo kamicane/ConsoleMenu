@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/ExtraInfoListEntry" itemID="599afc46-00000852" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoListEntry" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureListEntry" sourceLastModified="1459145067" lastModified="1772416312" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/ExtraInfoListEntry" itemID="599afc46-00000852" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoListEntry" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureListEntry" sourceLastModified="1459145067" lastModified="1772418550" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="ExtraInfoListEntry">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="keyField" selected="true" fontRenderingMode="device" width="106" height="18" isSelectable="false" scrollable="true" renderAsHTML="true">
+                <DOMDynamicText name="keyField" fontRenderingMode="device" width="106" height="18" isSelectable="false" scrollable="true" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="12" ty="5"/>
                   </matrix>
@@ -19,7 +19,7 @@
                     </DOMTextRun>
                   </textRuns>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="valueField" fontRenderingMode="device" left="13.35" width="106" height="18" isSelectable="false" scrollable="true" renderAsHTML="true">
@@ -35,7 +35,7 @@
                     </DOMTextRun>
                   </textRuns>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMDynamicText>
               </elements>
@@ -59,7 +59,7 @@
                     </DOMTextRun>
                   </textRuns>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMDynamicText>
               </elements>

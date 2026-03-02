@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "source-path": ["./"],
+    "target-player": "11.2",
+    "targets": ["SWF"],
+    "output": "bin/Console.swf"
+  },
+  "mainClass": "Console"
+}

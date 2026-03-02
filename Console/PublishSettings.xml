@@ -5,7 +5,7 @@
     <flash>1</flash>
     <projectorWin>0</projectorWin>
     <projectorMac>0</projectorMac>
-    <html>1</html>
+    <html>0</html>
     <gif>0</gif>
     <jpeg>0</jpeg>
     <png>0</png>
@@ -20,7 +20,7 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>1</swcDefaultName>
     <oamDefaultName>0</oamDefaultName>
-    <flashFileName>../../SteamLibrary/steamapps/common/Fallout 4/Data/Interface/Console.swf</flashFileName>
+    <flashFileName>../../MO2Data/Fallout4/mods/Console History (OG)/Interface/Console.swf</flashFileName>
     <projectorWinFileName>Console.exe</projectorWinFileName>
     <projectorMacFileName>Console.app</projectorMacFileName>
     <htmlFileName>Console.html</htmlFileName>
@@ -57,7 +57,7 @@
     <WindowMode>0</WindowMode>
     <DisplayMenu>1</DisplayMenu>
     <DeviceFont>0</DeviceFont>
-    <TemplateFileName>C:\Users\元野\AppData\Local\Adobe\Flash CS6\zh_CN\Configuration\HTML\Default.html</TemplateFileName>
+    <TemplateFileName>C:\Users\kamicane\AppData\Local\Adobe\Animate 2024\en_US\Configuration\HTML\Default.html</TemplateFileName>
     <showTagWarnMsg>1</showTagWarnMsg>
   </PublishHtmlProperties>
   <PublishFlashProperties enabled="true">
@@ -79,7 +79,7 @@
     <ActionScriptVersion>3</ActionScriptVersion>
     <PackageExportFrame>1</PackageExportFrame>
     <PackagePaths></PackagePaths>
-    <AS3PackagePaths>.;./Common;./CLIK</AS3PackagePaths>
+    <AS3PackagePaths>.</AS3PackagePaths>
     <AS3ConfigConst>CONFIG::FLASH_AUTHORING=&quot;true&quot;;</AS3ConfigConst>
     <DebuggingPermitted>0</DebuggingPermitted>
     <DebuggingPassword></DebuggingPassword>
@@ -91,7 +91,7 @@
     <EventUse8kSampleRate>0</EventUse8kSampleRate>
     <UseNetwork>0</UseNetwork>
     <DocumentClass></DocumentClass>
-    <AS3Strict>0</AS3Strict>
+    <AS3Strict>2</AS3Strict>
     <AS3Coach>4</AS3Coach>
     <AS3AutoDeclare>0</AS3AutoDeclare>
     <AS3Dialect>AS3</AS3Dialect>
@@ -101,7 +101,7 @@
     <ScriptStuckDelay>15</ScriptStuckDelay>
     <IncludeXMP>1</IncludeXMP>
     <HardwareAcceleration>0</HardwareAcceleration>
-    <AS3Flags>4</AS3Flags>
+    <AS3Flags>6</AS3Flags>
     <DefaultLibraryLinkage>rsl</DefaultLibraryLinkage>
     <RSLPreloaderMethod>wrap</RSLPreloaderMethod>
     <RSLPreloaderSWF>$(AppConfig)/ActionScript 3.0/rsls/loader_animation.swf</RSLPreloaderSWF>
@@ -159,7 +159,7 @@
     <Property name="copy">true</Property>
     <Property name="default">true</Property>
     <Property name="embed">false</Property>
-    <Property name="filename">Untitled-1.svg</Property>
+    <Property name="filename">Console.svg</Property>
     <Property name="imagesPath">images</Property>
     <Property name="includeHiddenLayers">true</Property>
     <Property name="optimizeForCH">false</Property>
@@ -167,11 +167,11 @@
   </PublishProperties>
   <PublishProperties id="BBC1F806-66F2-4339-9306-FA48C7549E59" name="Mac Projector" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Untitled-1.app</Property>
+    <Property name="filename">Console.app</Property>
   </PublishProperties>
   <PublishProperties id="BBC2F906-78F3-4239-9305-FA48C8549E59" name="Win Projector" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Untitled-1.exe</Property>
+    <Property name="filename">Console.exe</Property>
   </PublishProperties>
 </flash_profile>
 </flash_profiles>

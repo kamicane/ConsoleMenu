@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Background" itemID="5999f62e-00000277" lastModified="1772406362">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Background" itemID="5999f62e-00000277" lastModified="1772540903">
   <timeline>
     <DOMTimeline name="Background">
       <layers>
@@ -13,13 +13,14 @@
                         <matrix>
                           <Matrix a="0" b="-0.207534790039063" c="0.78125" d="0" tx="640" ty="-170.05"/>
                         </matrix>
-                        <GradientEntry alpha="0.501960784313725" ratio="0.949019607843137"/>
+                        <GradientEntry alpha="0.647058823529412" ratio="0"/>
+                        <GradientEntry alpha="0.647058823529412" ratio="0.949019607843137"/>
                         <GradientEntry alpha="0" ratio="1"/>
                       </LinearGradient>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!25600 -6800|25600 0!25600 0|0 0!0 0|0 -6800!0 -6800|25600 -6800"/>
+                    <Edge fillStyle1="1" edges="!25600 -6800S2|25600 0!25600 0|0 0!0 0|0 -6800!0 -6800|25600 -6800"/>
                   </edges>
                 </DOMShape>
               </elements>

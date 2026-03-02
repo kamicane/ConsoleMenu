@@ -1,0 +1,87 @@
+<asformat-config>
+
+    <!-- Determines if empty blocks containing no statements will be collapsed to a single line, or if the closing curly brace should still appear on a new line. -->
+    <!-- Default: false -->
+    <collapse-empty-blocks>true</collapse-empty-blocks>
+
+    <!-- If enabled, parsing errors will be ignored. This may result in undesirable effects on formatting. -->
+    <!-- Default: false -->
+    <ignore-parsing-problems>false</ignore-parsing-problems>
+
+    <!-- Determines if the file must have at least one final new line. -->
+    <!-- Default: false -->
+    <insert-final-new-line>false</insert-final-new-line>
+
+    <!-- Determines if a new line is inserted before else when open braces are on new lines. -->
+    <!-- Default: true -->
+    <insert-new-line-else>false</insert-new-line-else>
+
+    <!-- Determines if a space should appear between function and the opening parenthesis for anonymous functions. -->
+    <!-- Default: false -->
+    <insert-space-anonymous-function-keyword>false</insert-space-anonymous-function-keyword>
+
+    <!-- Determines if spaces should appear before and after binary operators, such as +, ==, and &&. -->
+    <!-- Default: true -->
+    <insert-space-binary-operators>true</insert-space-binary-operators>
+
+    <!-- Determines if a space should be inserted after a comma when used as a delimiter, such as in object and array literals. -->
+    <!-- Default: true -->
+    <insert-space-comma-delimiter>true</insert-space-comma-delimiter>
+
+    <!-- Determines if a space should appear between control flow keywords, such as if, for, and while, and the opening parenthesis. -->
+    <!-- Default: true -->
+    <insert-space-control-flow-keywords>true</insert-space-control-flow-keywords>
+
+    <!-- Determines if a space should appear after each semicolon in a for loop. -->
+    <!-- Default: true -->
+    <insert-space-for-loop-semicolon>true</insert-space-for-loop-semicolon>
+
+    <!-- Determines if a single space should appear at the beginning of a line comment. -->
+    <!-- Default: true -->
+    <insert-space-line-comment>true</insert-space-line-comment>
+
+    <!-- Determines if a space should appear after metadata attributes. -->
+    <!-- Default: true -->
+    <insert-space-meta-attributes>true</insert-space-meta-attributes>
+
+    <!-- Insert spaces for indentation. -->
+    <!-- Default: false -->
+    <insert-spaces>false</insert-spaces>
+
+    <!-- Maximum number of empty new lines to preserve between lines of code. -->
+    <!-- Default: 2 -->
+    <max-preserve-new-lines>2</max-preserve-new-lines>
+
+    <!-- When MXML attributes are on separate lines, align them at the start. -->
+    <!-- Default: false -->
+    <mxml-align-attributes>false</mxml-align-attributes>
+
+    <!-- Determines if each MXML attribute should appear on a new line. -->
+    <!-- Default: false -->
+    <mxml-insert-new-line-attributes>false</mxml-insert-new-line-attributes>
+
+    <!-- Determines if an opening curly brace should appear on a new line or not. -->
+    <!-- Default: true -->
+    <open-brace-new-line>false</open-brace-new-line>
+
+    <!-- Determines how to handle semicolons at the end of statements. Supported values: ignore, insert, or remove. -->
+    <!-- Default: insert -->
+    <semicolons>insert</semicolons>
+
+    <!-- Sets the width of tab characters. -->
+    <!-- Default: 4 -->
+    <tab-size>2</tab-size>
+
+    <!-- List files to standard output if they have formatting changes. -->
+    <!-- Default: false -->
+    <list-files>false</list-files>
+
+    <!-- Ignores asformat-config.xml in the current working directory, if it exists. -->
+    <!-- Default: false -->
+    <skip-local-config-file>false</skip-local-config-file>
+
+    <!-- Write changes to files that have been formatted. -->
+    <!-- Default: false -->
+    <write-files>false</write-files>
+
+</asformat-config>

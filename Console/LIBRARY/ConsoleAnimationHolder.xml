@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ConsoleAnimationHolder" itemID="5999f98e-000002e5" linkageExportForAS="true" linkageClassName="ConsoleMenu.ConsoleAnimationHolder" lastModified="1772416355" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ConsoleAnimationHolder" itemID="5999f98e-000002e5" linkageExportForAS="true" linkageClassName="ConsoleMenu.ConsoleAnimationHolder" lastModified="1772417104" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="ConsoleAnimationHolder">
       <layers>
@@ -94,7 +94,7 @@
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Console" name="Menu_mc" selected="true" centerPoint3DX="640" centerPoint3DY="170">
+                <DOMSymbolInstance libraryItemName="Console" name="Menu_mc" centerPoint3DX="640" centerPoint3DY="170">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

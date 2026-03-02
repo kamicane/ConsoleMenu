@@ -1,8 +1,8 @@
-<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeatureList" itemID="566dc58f-00000079" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoList" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureList" sourceLastModified="1460165892" lastModified="1772416375" sourceItemID="00000000-ffffffff" displayAsComponent="false" customIconID="0" persistLivePreview11="true" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true">
+<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeatureList" itemID="566dc58f-00000079" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoList" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureList" sourceLastModified="1460165892" lastModified="1772418577" sourceItemID="00000000-ffffffff" displayAsComponent="false" customIconID="0" persistLivePreview11="true" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true">
   <timeline>
     <DOMTimeline name="FeatureList">
       <layers>
-        <DOMLayer name="ScrollDown" color="#4F80FF" autoNamed="false">
+        <DOMLayer name="ScrollDown" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="8704">
               <elements>
@@ -14,14 +14,14 @@
                     <Point/>
                   </transformationPoint>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="ScrollUp" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ScrollUp" color="#4F80FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="8704" rigPropagationMatrix='{"a":65536,"b":0,"c":0,"d":8822,"tx":0,"ty":0}'>
               <elements>
@@ -33,10 +33,10 @@
                     <Point/>
                   </transformationPoint>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Sprites/list_background_sym" name="border" selected="true" centerPoint3DX="126" centerPoint3DY="28.9">
+                <DOMSymbolInstance libraryItemName="Sprites/list_background_sym" name="border" centerPoint3DX="126" centerPoint3DY="28.9">
                   <matrix>
                     <Matrix d="1.07687377929688" ty="9.95"/>
                   </matrix>

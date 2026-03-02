@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeaturePanel" itemID="5708572d-000000e2" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeaturePanel" sourceLastModified="1503312097" scaleGridLeft="10.05" scaleGridRight="243.9" scaleGridTop="21" scaleGridBottom="278" lastModified="1772416393" lastUniqueIdentifier="5" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeaturePanel" itemID="5708572d-000000e2" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeaturePanel" sourceLastModified="1503312097" scaleGridLeft="10.05" scaleGridRight="243.9" scaleGridTop="21" scaleGridBottom="278" lastModified="1772418596" lastUniqueIdentifier="5" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="FeaturePanel">
       <layers>
@@ -46,7 +46,7 @@
                     <Point x="126.05" y="257.85"/>
                   </transformationPoint>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="Sprites/MenuBorder" centerPoint3DX="125" centerPoint3DY="-252.95">
@@ -57,7 +57,7 @@
                     <Point x="126.05" y="257.85"/>
                   </transformationPoint>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMSymbolInstance>
               </elements>

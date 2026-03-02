@@ -1,4 +1,4 @@
-﻿package ConsoleMenu
+package ConsoleMenu
 {
    import flash.display.MovieClip;
    

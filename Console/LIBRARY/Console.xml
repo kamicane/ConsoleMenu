@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Console" itemID="5999f623-00000276" linkageExportForAS="true" linkageClassName="Console" lastModified="1772415887" lastUniqueIdentifier="11">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Console" itemID="5999f623-00000276" linkageExportForAS="true" linkageClassName="Console" lastModified="1772566629" lastUniqueIdentifier="11">
   <timeline>
     <DOMTimeline name="Console">
       <layers>
-        <DOMLayer name="ExtraInfoWindow" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="ExtraInfoWindow" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728" rigPropagationMatrix='{"a":58765,"b":0,"c":0,"d":189416,"tx":0,"ty":0}'>
               <elements>
@@ -34,120 +34,24 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="BaseFormDataText" color="#9933CC" autoNamed="false">
+        <DOMLayer name="BaseFormDataText" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="refName" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="702" ty="-300"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Text</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
-                </DOMDynamicText>
-                <DOMDynamicText name="refFormType" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="702" ty="-260"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Text</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
-                </DOMDynamicText>
-                <DOMDynamicText name="refFormID" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="702" ty="-220"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Text</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
-                </DOMDynamicText>
-                <DOMDynamicText name="baseFormID" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="702" ty="-180"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Text</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
-                </DOMDynamicText>
-                <DOMDynamicText name="baseDefineModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="502" ty="-100"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Text</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
-                </DOMDynamicText>
-                <DOMDynamicText name="refDefineModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
-                  <matrix>
-                    <Matrix tx="502" ty="-140"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Text</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
-                </DOMDynamicText>
-                <DOMDynamicText name="baseLastChangeModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="InfoBox_tf" fontRenderingMode="device" top="-249.7" left="283" width="463" height="287.8" isSelectable="false" renderAsHTML="true" lineType="multiline">
                   <matrix>
                     <Matrix tx="502" ty="-60"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>Text</characters>
+                      <characters>Text Line 1&#xD;Text Line 2&#xD;Text Line 3&#xD;Text Line 4&#xD;Text Line 5&#xD;Text Line 6&#xD;Text Line 7</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineSpacing="8" lineHeight="15.85" bitmapSize="240" face="$ConsoleFont*" fillColor="#CC0000"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMDynamicText>
               </elements>
@@ -158,21 +62,31 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="CommandPrompt_tf" fontRenderingMode="device" width="32" height="26" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="CommandPromptEx_tf" fontRenderingMode="device" width="32" height="26" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="32" ty="-31"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>----</characters>
+                      <characters>--- </characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" face="$ConsoleFont*" fillColor="#CC0000"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
+                </DOMDynamicText>
+                <DOMDynamicText name="CommandPrompt_tf" fontRenderingMode="device" width="32" height="26" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="32" ty="10.1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>--- </characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#999999"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -182,7 +96,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="CurrentSelection" fontRenderingMode="device" width="1136" height="20" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="CurrentSelection" fontRenderingMode="device" width="1216" height="20" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="32" ty="-321"/>
                   </matrix>
@@ -190,12 +104,12 @@
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="15.85" bitmapSize="240" face="$ConsoleFont*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="15.85" bitmapSize="240" face="$ConsoleFont*" fillColor="#252525"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMDynamicText>
               </elements>
@@ -214,12 +128,12 @@
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$DebugTextFont*" fillColor="#999999"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CC0000"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
                   <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                    <DropShadowFilter blurX="1" blurY="1" distance="1" quality="2" strength="2"/>
                   </filters>
                 </DOMDynamicText>
               </elements>
@@ -238,13 +152,10 @@
                     <DOMTextRun>
                       <characters>Text</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#FFFFFF"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.2" size="10" bitmapSize="200" face="$ConsoleFont*" fillColor="#CC0000"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
-                  <filters>
-                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
-                  </filters>
                 </DOMInputText>
               </elements>
             </DOMFrame>
