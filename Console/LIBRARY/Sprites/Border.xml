@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/Border" itemID="566dd094-0000008d" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/Border" sourceLastModified="1450037396" lastModified="1450037396" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/Border" itemID="566dd094-0000008d" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/Border" sourceLastModified="1450037396" lastModified="1772411167" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="Border">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="8704">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape>
                   <fills>
                     <FillStyle index="1">
                       <SolidColor color="#FFFFFF"/>
@@ -20,17 +20,10 @@
                         </fill>
                       </SolidStroke>
                     </StrokeStyle>
-                    <StrokeStyle index="2">
-                      <SolidStroke scaleMode="normal">
-                        <fill>
-                          <SolidColor color="#FFFFFF" alpha="0.00784313725490196"/>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!2000 2000S2|0 2000!0 2000|0 0!0 0|2000 0"/>
-                    <Edge fillStyle1="1" strokeStyle="2" edges="!2000 0S2|2000 2000"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!0 2000S2|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0S2|5040 0!5040 0|5040 6000!5040 6000|0 6000!0 6000|0 2000"/>
                   </edges>
                 </DOMShape>
               </elements>

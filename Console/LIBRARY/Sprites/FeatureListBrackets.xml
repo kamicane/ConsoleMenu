@@ -65,7 +65,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Sprites/BracketExtents" name="BracketExtents_mc" centerPoint3DY="-0.05">
                   <matrix>
-                    <Matrix a="0.988235473632812" d="0.913711547851562" tx="9.5" ty="3"/>
+                    <Matrix a="0.98822021484375" d="0.9136962890625" tx="9.5" ty="3"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

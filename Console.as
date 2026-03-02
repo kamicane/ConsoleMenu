@@ -439,24 +439,10 @@
       {
          // this is called by native code also.
          // we just no-op it.
-         // code has been moved to onResize
+
+         // code has been moved to onResize for now
+
          trace('[Console] set size ' + percent);
-
-         // // var stageHeight:Number = stage.stageHeight;
-         // var stageHeight:Number = this.OriginalHeight;
-
-         // this.ScreenPercent = percent;
-         // this.Background.height = stageHeight * (percent / 100); // * 2;
-
-         // this.PositionTextFields();
-
-         // this.FirstExtraInfoPanel_mc.y = this.SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
-         // this.FirstExtraInfoPanel_mc.height = this.SecondExtraInfoPanel_mc.height = this.ThirdExtraInfoPanel_mc.height = stageHeight - Background.height - 10;
-         // this.FirstExtraInfoPanel_mc.width = this.SecondExtraInfoPanel_mc.width = this.ThirdExtraInfoPanel_mc.width = FirstExtraInfoPanel_mc.height / 2;
-
-         // this.SecondExtraInfoPanel_mc.x = this.FirstExtraInfoPanel_mc.x + this.FirstExtraInfoPanel_mc.width * 1.05;
-         // this.ThirdExtraInfoPanel_mc.x = this.SecondExtraInfoPanel_mc.x + this.SecondExtraInfoPanel_mc.width * 1.05;
-
       }
 
       public function PositionTextFields():*
@@ -466,18 +452,17 @@
 
          var stageHeight:Number = this.OriginalHeight;
 
-         // this.CurrentSelection.y = this.CurrentSelectionYOffset - this.Background.height;
-         // this.CommandHistory.y = this.CurrentSelection.y + this.CurrentSelection.height;
-         // this.CommandHistory.height = this.CommandEntry.y - this.CommandHistory.y;
+         this.CurrentSelection.y = this.CurrentSelectionYOffset - this.Background.height;
+         this.CommandHistory.y = this.CurrentSelection.y + this.CurrentSelection.height;
+         this.CommandHistory.height = this.CommandEntry.y - this.CommandHistory.y;
 
-         // baseLastChangeModName.height = baseDefineModName.height = refDefineModName.height = baseFormID.height = refFormID.height = refFormType.height = refName.height = stageHeight / 28;
-         // this.refName.y = this.CurrentSelection.y + this.CurrentSelection.height;
-         // this.refFormType.y = this.refName.y + this.refName.height * 1.1;
-         // this.refFormID.y = this.refFormType.y + this.refFormType.height * 1.1;
-         // this.baseFormID.y = this.refFormID.y + this.refFormID.height * 1.1;
-         // this.refDefineModName.y = this.baseFormID.y + this.baseFormID.height * 1.1;
-         // this.baseDefineModName.y = this.refDefineModName.y + this.refDefineModName.height * 1.1;
-         // this.baseLastChangeModName.y = this.baseDefineModName.y + this.baseDefineModName.height * 1.1;
+         this.refName.y = this.CurrentSelection.y + this.CurrentSelection.height;
+         this.refFormType.y = this.refName.y + this.refName.height * 1.1;
+         this.refFormID.y = this.refFormType.y + this.refFormType.height * 1.1;
+         this.baseFormID.y = this.refFormID.y + this.refFormID.height * 1.1;
+         this.refDefineModName.y = this.baseFormID.y + this.baseFormID.height * 1.1;
+         this.baseDefineModName.y = this.refDefineModName.y + this.refDefineModName.height * 1.1;
+         this.baseLastChangeModName.y = this.baseDefineModName.y + this.baseDefineModName.height * 1.1;
 
       }
 
@@ -690,10 +675,20 @@
       {
          trace('[Console] onResize');
 
+         // hack: native code somehow sets StageScaleMode.NO_SCALE
+         // we detect this onResize
+         // we simply reset it to SHOW_ALL and return. onResize then fires again.
+         // this only happens once
+
+         if (stage.scaleMode != StageScaleMode.SHOW_ALL) {
+            stage.scaleMode = StageScaleMode.SHOW_ALL;
+            trace('[Console] stage scalemode is not SHOW_ALL');
+            return;
+         }
+
          // var stageWidth:Number = stage.stageWidth;
          var stageWidth:Number = this.OriginalWidth;
 
-         stage.scaleMode = StageScaleMode.SHOW_ALL;
          trace("[Console:OnResize] sw= " + stage.stageWidth + ", sh = " + stage.stageHeight);
 
          // this.Background.width = stageWidth;
@@ -710,17 +705,17 @@
          // this.size = this.ScreenPercent;
          var stageHeight:Number = this.OriginalHeight;
 
-         this.ScreenPercent = percent;
+         var percent:Number = 40;
          this.Background.height = stageHeight * (percent / 100); // * 2;
 
-         // this.PositionTextFields();
+         this.PositionTextFields();
 
-         this.FirstExtraInfoPanel_mc.y = this.SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
-         this.FirstExtraInfoPanel_mc.height = this.SecondExtraInfoPanel_mc.height = this.ThirdExtraInfoPanel_mc.height = stageHeight - Background.height - 10;
-         // this.FirstExtraInfoPanel_mc.width = this.SecondExtraInfoPanel_mc.width = this.ThirdExtraInfoPanel_mc.width = FirstExtraInfoPanel_mc.height / 2;
+         // this.FirstExtraInfoPanel_mc.y = this.SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
+         // this.FirstExtraInfoPanel_mc.height = this.SecondExtraInfoPanel_mc.height = this.ThirdExtraInfoPanel_mc.height = stageHeight - Background.height - 10;
+         // this.FirstExtraInfoPanel_mc.width = this.SecondExtraInfoPanel_mc.width = this.ThirdExtraInfoPanel_mc.width = FirstExtraInfoPanel_mc.height / 3;
 
-         this.SecondExtraInfoPanel_mc.x = this.FirstExtraInfoPanel_mc.x + this.FirstExtraInfoPanel_mc.width * 1.05;
-         this.ThirdExtraInfoPanel_mc.x = this.SecondExtraInfoPanel_mc.x + this.SecondExtraInfoPanel_mc.width * 1.05;
+         // this.SecondExtraInfoPanel_mc.x = this.FirstExtraInfoPanel_mc.x + this.FirstExtraInfoPanel_mc.width * 1.05;
+         // this.ThirdExtraInfoPanel_mc.x = this.SecondExtraInfoPanel_mc.x + this.SecondExtraInfoPanel_mc.width * 1.05;
       }
    }
 }

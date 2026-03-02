@@ -1,33 +1,33 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Console" itemID="5999f623-00000276" linkageExportForAS="true" linkageClassName="Console" lastModified="1772406113" lastUniqueIdentifier="11">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Console" itemID="5999f623-00000276" linkageExportForAS="true" linkageClassName="Console" lastModified="1772415887" lastUniqueIdentifier="11">
   <timeline>
-    <DOMTimeline name="Console" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-467&lt;/guideline&gt;&lt;guideline direction="h"&gt;-433&lt;/guideline&gt;&lt;guideline direction="h"&gt;-747&lt;/guideline&gt;&lt;guideline direction="h"&gt;-1&lt;/guideline&gt;&lt;guideline direction="h"&gt;-719&lt;/guideline&gt;&lt;guideline direction="h"&gt;-182&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="Console">
       <layers>
-        <DOMLayer name="ExtraInfoWindow" color="#FF800A" autoNamed="false">
+        <DOMLayer name="ExtraInfoWindow" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="9728">
+            <DOMFrame index="0" keyMode="9728" rigPropagationMatrix='{"a":58765,"b":0,"c":0,"d":189416,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="Sprites/FeaturePanel" name="FirstExtraInfoPanel_mc" centerPoint3DX="159.35" centerPoint3DY="-423.6">
+                <DOMSymbolInstance libraryItemName="Sprites/FeaturePanel" name="FirstExtraInfoPanel_mc" centerPoint3DX="171.25" centerPoint3DY="-312">
                   <matrix>
-                    <Matrix a="1.03765869140625" d="0.70263671875" ty="-712.15"/>
+                    <Matrix d="0.999984741210938" tx="30" ty="-680.1"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point y="-36.85"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Sprites/FeaturePanel" name="SecondExtraInfoPanel_mc" centerPoint3DX="444.35" centerPoint3DY="-423.6">
+                <DOMSymbolInstance libraryItemName="Sprites/FeaturePanel" name="SecondExtraInfoPanel_mc" centerPoint3DX="465.55" centerPoint3DY="-269.55">
                   <matrix>
-                    <Matrix a="1.03765869140625" d="0.70263671875" tx="285" ty="-712.15"/>
+                    <Matrix d="0.999984741210938" tx="312" ty="-680.1"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point y="-0.1"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Sprites/FeaturePanel" name="ThirdExtraInfoPanel_mc" centerPoint3DX="729.35" centerPoint3DY="-423.6">
+                <DOMSymbolInstance libraryItemName="Sprites/FeaturePanel" name="ThirdExtraInfoPanel_mc" centerPoint3DX="747.55" centerPoint3DY="-269.55">
                   <matrix>
-                    <Matrix a="1.03765869140625" d="0.70263671875" tx="570" ty="-712.15"/>
+                    <Matrix d="0.999984741210938" tx="594" ty="-680.1"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point y="-0.1"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -50,6 +50,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="refFormType" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
@@ -63,6 +66,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="refFormID" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
@@ -76,6 +82,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="baseFormID" fontRenderingMode="device" width="546" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
@@ -89,6 +98,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="baseDefineModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
@@ -102,6 +114,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="refDefineModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
@@ -115,6 +130,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
                 <DOMDynamicText name="baseLastChangeModName" fontRenderingMode="device" width="746" height="21" isSelectable="false" renderAsHTML="true">
                   <matrix>
@@ -128,6 +146,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -137,7 +158,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="CommandPrompt_tf" fontRenderingMode="device" width="32" height="26" isSelectable="false">
+                <DOMDynamicText name="CommandPrompt_tf" fontRenderingMode="device" width="32" height="26" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="32" ty="-31"/>
                   </matrix>
@@ -149,6 +170,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -170,6 +194,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -191,6 +218,9 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -212,16 +242,19 @@
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMInputText>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Background" color="#7F42FB" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Background" color="#7F42FB" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Background" name="Background" selected="true" centerPoint3DX="640" centerPoint3DY="170">
+                <DOMSymbolInstance libraryItemName="Background" name="Background" centerPoint3DX="640" centerPoint3DY="170">
                   <matrix>
                     <Matrix d="0.999984741210938"/>
                   </matrix>

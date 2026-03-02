@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="8704">
               <elements>
-                <DOMSymbolInstance libraryItemName="Shapes/Shape 44" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="Shapes/Shape 44" selected="true" symbolType="graphic" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

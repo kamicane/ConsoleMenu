@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/MenuBorder" itemID="599ad3bb-0000064d" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/Sprite 53" sourceLastModified="1449810441" lastModified="1503318971" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/MenuBorder" itemID="599ad3bb-0000064d" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/Sprite 53" sourceLastModified="1449810441" lastModified="1772414831" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="MenuBorder">
       <layers>
@@ -6,10 +6,10 @@
           <frames>
             <DOMFrame index="0" keyMode="8704">
               <elements>
-                <DOMShape isFloating="true">
+                <DOMShape>
                   <strokes>
                     <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal" caps="square" weight="2" joints="miter">
+                      <SolidStroke scaleMode="normal" caps="square" weight="4" joints="miter">
                         <fill>
                           <SolidColor color="#FFFFFF"/>
                         </fill>
@@ -17,7 +17,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!5043 5117|5043 5198!5043 5198|0 5198!0 5198|0 5117"/>
+                    <Edge strokeStyle="1" edges="!5000 0|5000 81!5000 81|0 81!0 81|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>

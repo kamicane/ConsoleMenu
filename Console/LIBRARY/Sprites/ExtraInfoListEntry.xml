@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/ExtraInfoListEntry" itemID="599afc46-00000852" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoListEntry" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureListEntry" sourceLastModified="1459145067" lastModified="1772405373" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/ExtraInfoListEntry" itemID="599afc46-00000852" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="ExtraInfoListEntry" linkageURL="." sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeatureListEntry" sourceLastModified="1459145067" lastModified="1772416312" sourceItemID="00000000-ffffffff">
   <timeline>
     <DOMTimeline name="ExtraInfoListEntry">
       <layers>
@@ -6,31 +6,37 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="keyField" fontRenderingMode="device" width="96" height="26.4" isSelectable="false" scrollable="true" renderAsHTML="true">
+                <DOMDynamicText name="keyField" selected="true" fontRenderingMode="device" width="106" height="18" isSelectable="false" scrollable="true" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="7" ty="3.6"/>
+                    <Matrix tx="12" ty="5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters></characters>
+                      <characters>some text</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" lineSpacing="5" lineHeight="23.75" size="18" bitmapSize="360" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs aliasText="false" autoKern="false" lineSpacing="5" lineHeight="17.15" size="13" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
-                <DOMDynamicText name="valueField" fontRenderingMode="device" width="132" height="26.4" isSelectable="false" scrollable="true" renderAsHTML="true">
+                <DOMDynamicText name="valueField" fontRenderingMode="device" left="13.35" width="106" height="18" isSelectable="false" scrollable="true" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="110.65" ty="3.6"/>
+                    <Matrix tx="120.65" ty="5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters></characters>
+                      <characters>some value</characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" lineSpacing="5" lineHeight="23.75" size="18" bitmapSize="360" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" lineSpacing="5" lineHeight="17.15" size="13" bitmapSize="260" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -40,18 +46,21 @@
           <frames>
             <DOMFrame index="0" keyMode="8704">
               <elements>
-                <DOMDynamicText name="textField" fontRenderingMode="standard" width="216" height="26.4" includeOutlines="true" isSelectable="false" scrollable="true" renderAsHTML="true">
+                <DOMDynamicText name="textField" fontRenderingMode="standard" width="228" height="18" includeOutlines="true" isSelectable="false" scrollable="true" renderAsHTML="true">
                   <matrix>
-                    <Matrix tx="20" ty="3"/>
+                    <Matrix tx="12" ty="5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" lineSpacing="5" lineHeight="23.75" size="18" bitmapSize="360" face="$ConsoleFont*" fillColor="#CCCCCC"/>
+                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" lineSpacing="5" lineHeight="17.15" size="13" bitmapSize="260" face="$ConsoleFont*" fillColor="#CCCCCC"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
@@ -59,18 +68,12 @@
         </DOMLayer>
         <DOMLayer name="Border" color="#4F80FF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="8704">
+            <DOMFrame index="0" keyMode="8704" rigPropagationMatrix='{"a":26214,"b":0,"c":0,"d":234066,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="Sprites/Border" name="border">
-                  <matrix>
-                    <Matrix a="2.5" d="0.279998779296875" ty="3"/>
-                  </matrix>
+                <DOMSymbolInstance libraryItemName="Sprites/listitem_background_sym" name="border">
                   <transformationPoint>
-                    <Point/>
+                    <Point x="123.85" y="17.65"/>
                   </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0.859375"/>
-                  </color>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>

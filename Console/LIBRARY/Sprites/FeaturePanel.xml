@@ -1,17 +1,17 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeaturePanel" itemID="5708572d-000000e2" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeaturePanel" sourceLastModified="1503312097" lastModified="1772390653" lastUniqueIdentifier="5" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Sprites/FeaturePanel" itemID="5708572d-000000e2" sourceFlashFilepath="../../FalloutUI-master/src/LooksMenu.fla" sourceLibraryItemHRef="Sprites/FeaturePanel" sourceLastModified="1503312097" scaleGridLeft="10.05" scaleGridRight="243.9" scaleGridTop="21" scaleGridBottom="278" lastModified="1772416393" lastUniqueIdentifier="5" sourceItemID="00000000-ffffffff">
   <timeline>
-    <DOMTimeline name="FeaturePanel" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;133&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="FeaturePanel">
       <layers>
         <DOMLayer name="ListMC" color="#4F80FF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="8704">
+            <DOMFrame index="0" keyMode="8704" rigPropagationMatrix='{"a":64650,"b":0,"c":0,"d":74000,"tx":0,"ty":0}'>
               <elements>
-                <DOMComponentInstance libraryItemName="Sprites/FeatureList" name="List_mc" centerPoint3DX="140.4" centerPoint3DY="268.2" uniqueID="1">
+                <DOMComponentInstance libraryItemName="Sprites/FeatureList" name="List_mc" centerPoint3DX="123.75" centerPoint3DY="258.35" uniqueID="1">
                   <matrix>
-                    <Matrix a="1.01370239257813" d="0.885604858398438" tx="15" ty="39.5"/>
+                    <Matrix d="0.999984741210938"/>
                   </matrix>
                   <transformationPoint>
-                    <Point/>
+                    <Point x="0.05" y="0.1"/>
                   </transformationPoint>
                   <parametersAsXML><![CDATA[   <property id="listEntryClass">
       <Inspectable name="listEntryClass" unlocalizedName="listEntryClass" variable="listEntryClass" category="" verbose="0" defaultValue="ExtraInfoListEntry" type="String"/>
@@ -36,23 +36,29 @@
         </DOMLayer>
         <DOMLayer name="BracketsExtents" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="8704">
+            <DOMFrame index="0" keyMode="8704" rigPropagationMatrix='{"a":-65284,"b":0,"c":0,"d":-106105,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="Sprites/Bracket" centerPoint3DX="139.75" centerPoint3DY="521.85">
+                <DOMSymbolInstance libraryItemName="Sprites/MenuBorder">
                   <matrix>
-                    <Matrix a="2.25430297851563" d="1.76821899414063" tx="4.45" ty="464.4"/>
+                    <Matrix tx="1.15" ty="295.45"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="60" y="18"/>
+                    <Point x="126.05" y="257.85"/>
                   </transformationPoint>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Sprites/Bracket" centerPoint3DX="139.7" centerPoint3DY="14.55">
+                <DOMSymbolInstance libraryItemName="Sprites/MenuBorder" centerPoint3DX="125" centerPoint3DY="-252.95">
                   <matrix>
-                    <Matrix a="2.25430297851563" d="-1.76821899414063" tx="4.4" ty="72"/>
+                    <Matrix a="-1" d="-1" tx="251.05" ty="4.9"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="60" y="18"/>
+                    <Point x="126.05" y="257.85"/>
                   </transformationPoint>
+                  <filters>
+                    <DropShadowFilter blurX="3" blurY="3" distance="1" quality="2"/>
+                  </filters>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
@@ -60,11 +66,11 @@
         </DOMLayer>
         <DOMLayer name="Background" color="#9933CC" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="9728">
+            <DOMFrame index="0" keyMode="9728" rigPropagationMatrix='{"a":26311,"b":0,"c":0,"d":34129,"tx":0,"ty":0}'>
               <elements>
-                <DOMSymbolInstance libraryItemName="Sprites/Border" name="background" centerPoint3DX="10.2" centerPoint3DY="66.65">
+                <DOMSymbolInstance libraryItemName="Sprites/Border" name="background">
                   <matrix>
-                    <Matrix a="2.67373657226563" d="5.18008422851563" tx="6.15" ty="10"/>
+                    <Matrix a="0.999984741210938"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
