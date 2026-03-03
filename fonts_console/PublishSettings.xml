@@ -195,7 +195,7 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>1</swcDefaultName>
     <oamDefaultName>0</oamDefaultName>
-    <flashFileName>../../../../MO2Data/Fallout4/mods/Console History (OG)/Interface/fonts_console.swf</flashFileName>
+    <flashFileName>../../MO2Data/Fallout4/mods/Console History (OG)/Interface/fonts_console.swf</flashFileName>
     <projectorWinFileName>fonts_console.exe</projectorWinFileName>
     <projectorMacFileName>fonts_console.app</projectorMacFileName>
     <htmlFileName>fonts_console.html</htmlFileName>
@@ -241,7 +241,7 @@
     <Report>0</Report>
     <Protect>0</Protect>
     <OptimizeForAE>0</OptimizeForAE>
-    <OmitTraceActions>0</OmitTraceActions>
+    <OmitTraceActions>1</OmitTraceActions>
     <Quality>100</Quality>
     <DeblockingFilter>0</DeblockingFilter>
     <StreamFormat>0</StreamFormat>

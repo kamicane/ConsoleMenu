@@ -2,7 +2,7 @@
   <timeline>
     <DOMTimeline name="Console">
       <layers>
-        <DOMLayer name="ExtraInfoWindow" color="#FF800A" autoNamed="false">
+        <DOMLayer name="ExtraInfoWindow" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728" rigPropagationMatrix='{"a":58765,"b":0,"c":0,"d":189416,"tx":0,"ty":0}'>
               <elements>
@@ -34,7 +34,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="BaseFormDataText" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="BaseFormDataText" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
