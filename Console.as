@@ -11,7 +11,7 @@ package {
 	import Shared.AS3.BSScrollingList;
 	import Shared.IMenu;
 	import flash.display.MovieClip;
-	import flash.display.StageAlign;
+	// import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
@@ -95,7 +95,7 @@ package {
 			TextFieldEx.setNoTranslate(CommandHistory, true);
 
 			InfoBox_tf.defaultTextFormat = InfoBox_tf.getTextFormat();
-			// baseLastChangeModName.text = "";
+			InfoBox_tf.text = "";
 			TextFieldEx.setNoTranslate(InfoBox_tf, true);
 
 			// stage.align = StageAlign.BOTTOM_LEFT; // ????????????????????????????????????????
@@ -116,7 +116,8 @@ package {
 			defaultSettings.Style = {
 					ScreenPercent: "40",
 					FontSize: "10",
-					TitleFontSize: "10",
+					TitleFontSize: "12",
+					InfoBoxFontSize: "12",
 					FontColor: "#F3F3F3",
 					SelectionColor: "#121212FF",
 					SelectionBackgroundColor: "#F3F3F3FF",
@@ -167,6 +168,9 @@ package {
 			Background.height = OriginalHeight * (screenPercent / 100);
 
 			var fontSize:Number = settings.GetNumber("Style", "FontSize");
+			var titleFontSize:Number = settings.GetNumber("Style", "TitleFontSize");
+			var infoBoxFontSize:Number = settings.GetNumber("Style", "InfoBoxFontSize");
+
 			var fontColor:uint = settings.GetColor("Style", "FontColor");
 			var titleFontColor:uint = settings.GetColor("Style", "TitleFontColor");
 			var historyFontColor:uint = settings.GetColor("Style", "TitleFontColor");
@@ -181,7 +185,7 @@ package {
 
 			// InfoBox
 
-			SetTextFormat(InfoBox_tf, fontSize * 1.2, infoBoxFontColor);
+			SetTextFormat(InfoBox_tf, infoBoxFontSize, infoBoxFontColor);
 			// InfoBox_tf.background = true;
 			// InfoBox_tf.backgroundColor = 0xFF0000;
 
@@ -204,7 +208,7 @@ package {
 
 			// End InfoBox
 
-			SetTextFormat(CurrentSelection, fontSize * 1.2, titleFontColor);
+			SetTextFormat(CurrentSelection, titleFontSize, titleFontColor);
 			SetTextFormat(CommandHistory, fontSize, historyFontColor);
 
 			SetTextFormat(CommandEntry, fontSize, fontColor);
