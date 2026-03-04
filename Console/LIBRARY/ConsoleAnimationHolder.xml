@@ -22,7 +22,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Console" name="Menu_mc" selected="true" centerPoint3DX="640" centerPoint3DY="170.7">
+                <DOMSymbolInstance libraryItemName="Console" name="Menu_mc" centerPoint3DX="640" centerPoint3DY="170.7">
                   <matrix>
                     <Matrix d="1.00418090820313"/>
                   </matrix>

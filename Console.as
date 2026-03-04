@@ -184,7 +184,7 @@ package {
 			CommandHistory.height = CommandEntry.y - CommandHistory.y;
 
 			// InfoBox
-
+			InfoBox_tf.text = "Item 1\nItem 2\nItem 3\nItem 4\nItem 5\nItem 6\n7"; // for measuring
 			SetTextFormat(InfoBox_tf, infoBoxFontSize, infoBoxFontColor);
 			// InfoBox_tf.background = true;
 			// InfoBox_tf.backgroundColor = 0xFF0000;
@@ -205,6 +205,8 @@ package {
 				InfoBox_tf.height = infoTextHeight;
 				InfoBox_tf.y = infoMaxTop + (infoMaxHeight - InfoBox_tf.height) / 2;
 			}
+
+			InfoBox_tf.text = "";
 
 			// End InfoBox
 

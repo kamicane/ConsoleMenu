@@ -1,7 +1,6 @@
 package {
-	import Shared.AS3.*;
-	import flash.display.*;
-	import flash.geom.*;
+	import Shared.AS3.BSScrollingListEntry;
+	import flash.display.MovieClip;
 
 	public class FeatureListEntry extends Shared.AS3.BSScrollingListEntry {
 		public function FeatureListEntry() {
@@ -20,6 +19,6 @@ package {
 			return;
 		}
 
-		public var EquipIcon_mc:flash.display.MovieClip;
+		public var EquipIcon_mc:MovieClip;
 	}
 }

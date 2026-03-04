@@ -2,7 +2,7 @@
   "compilerOptions": {
     "source-path": ["./"],
     "target-player": "11.2",
-    "targets": ["SWF"],
+    // "targets": ["SWF"], remove for apache flex
     "output": "bin/Console.swf"
   },
   "mainClass": "Console"

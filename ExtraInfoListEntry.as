@@ -1,5 +1,6 @@
 package {
-	import Shared.AS3.*;
+	import Shared.AS3.BSScrollingListEntry;
+	import Shared.AS3.BSScrollingList;
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	import flash.filters.DropShadowFilter;

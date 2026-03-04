@@ -5,8 +5,8 @@
           <DOMFolderItem name="Shared/Fonts/fonts_console" itemID="5dc39471-00000240" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="Shared/Fonts/fonts_console/$ConsoleFont" itemID="5db49e08-000001fa" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$ConsoleFont" linkageURL="fonts_console.swf" font="JetBrainsMono-Regular" size="0" id="2" sourceLastImported="1572118449" embedRanges="9999"/>
           <DOMFontItem name="Shared/Fonts/fonts_console/$DebugTextFont" itemID="5db49e19-000001fc" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$DebugTextFont" linkageURL="fonts_console.swf" font="JetBrainsMono-Light" size="0" id="1" sourceLastImported="1572314669" embedRanges="9999"/>
+          <DOMFontItem name="Shared/Fonts/fonts_console/$ConsoleFont" itemID="5db49e08-000001fa" linkageExportForAS="true" linkageExportForRS="true" linkageClassName="$ConsoleFont" linkageURL="fonts_console.swf" font="JetBrainsMono-Regular" size="0" id="2" sourceLastImported="1572118449" embedRanges="9999"/>
      </fonts>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -59,6 +59,7 @@
      <scripts/>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="115123" publishTime="1772593570"/>
           <PublishItem publishSize="115123" publishTime="1772574375"/>
           <PublishItem publishSize="115281" publishTime="1772391441" publishDebug="true"/>
           <PublishItem publishSize="57335" publishTime="1772391403" publishDebug="true"/>

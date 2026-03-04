@@ -1,5 +1,5 @@
 package {
-	import Shared.AS3.*;
+	import Shared.AS3.BSScrollingList;
 
 	public dynamic class ExtraInfoList extends Shared.AS3.BSScrollingList {
 		public var ID:uint;
