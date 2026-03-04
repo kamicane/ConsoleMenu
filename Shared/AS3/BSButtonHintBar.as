@@ -6,38 +6,38 @@ package Shared.AS3
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.geom.Rectangle;
-	
+
 	public dynamic class BSButtonHintBar extends BSUIComponent
 	{
-		 
-		
+
+
 		public var ButtonBracket_Left_mc:MovieClip;
-		
+
 		public var ButtonBracket_Right_mc:MovieClip;
-		
+
 		public var ShadedBackground_mc:MovieClip;
-		
+
 		private var ButtonHintBarInternal_mc:MovieClip;
-		
+
 		private var _buttonHintDataV:Vector.<BSButtonHintData>;
-		
+
 		private var ButtonPoolV:Vector.<BSButtonHint>;
-		
+
 		private var _bRedirectToButtonBarMenu:Boolean = true;
-		
+
 		private var _backgroundColor:uint = 0;
-		
+
 		private var _backgroundAlpha:Number = 1.0;
-		
+
 		private var _bShowBrackets_Override:Boolean = true;
-		
+
 		private var _bUseShadedBackground_Override:Boolean = true;
-		
+
 		public var SetButtonHintData:Function;
-		
+
 		public function BSButtonHintBar()
 		{
-			trace("[BSButtonHintBar] (CTOR)");
+			// trace("[BSButtonHintBar] (CTOR)");
 			this.SetButtonHintData = this.SetButtonHintData_Impl;
 			super();
 			visible = false;
@@ -46,12 +46,12 @@ package Shared.AS3
 			this._buttonHintDataV = new Vector.<BSButtonHintData>();
 			this.ButtonPoolV = new Vector.<BSButtonHint>();
 		}
-		
+
 		public function get bRedirectToButtonBarMenu() : Boolean
 		{
 			return this._bRedirectToButtonBarMenu;
 		}
-		
+
 		public function set bRedirectToButtonBarMenu(abRedirectToButtonBarMenu:Boolean) : *
 		{
 			if(this._bRedirectToButtonBarMenu != abRedirectToButtonBarMenu)
@@ -60,12 +60,12 @@ package Shared.AS3
 				SetIsDirty();
 			}
 		}
-		
+
 		public function get BackgroundColor() : uint
 		{
 			return this._backgroundColor;
 		}
-		
+
 		public function set BackgroundColor(abBackgroundColor:uint) : *
 		{
 			if(this._backgroundColor != abBackgroundColor)
@@ -74,12 +74,12 @@ package Shared.AS3
 				SetIsDirty();
 			}
 		}
-		
+
 		public function get BackgroundAlpha() : Number
 		{
 			return this._backgroundAlpha;
 		}
-		
+
 		public function set BackgroundAlpha(abBackgroundAlpha:Number) : *
 		{
 			if(this._backgroundAlpha != abBackgroundAlpha)
@@ -87,34 +87,34 @@ package Shared.AS3
 				this._backgroundAlpha = abBackgroundAlpha;
 			}
 		}
-		
+
 		override public function get bShowBrackets() : Boolean
 		{
 			return this._bShowBrackets_Override;
 		}
-		
+
 		override public function set bShowBrackets(abShowBrackets:Boolean) : *
 		{
 			this._bShowBrackets_Override = abShowBrackets;
 			SetIsDirty();
 		}
-		
+
 		override public function get bUseShadedBackground() : Boolean
 		{
 			return this._bUseShadedBackground_Override;
 		}
-		
+
 		override public function set bUseShadedBackground(abUseShadedBackground:Boolean) : *
 		{
 			this._bUseShadedBackground_Override = abUseShadedBackground;
 			SetIsDirty();
 		}
-		
+
 		private function CanBeVisible() : Boolean
 		{
 			return !this.bRedirectToButtonBarMenu || !bAcquiredByNativeCode;
 		}
-		
+
 		override public function onAcquiredByNativeCode() : *
 		{
 			var emptyButtonHintDataV:Vector.<BSButtonHintData> = null;
@@ -127,7 +127,7 @@ package Shared.AS3
 				SetIsDirty();
 			}
 		}
-		
+
 		private function SetButtonHintData_Impl(abuttonHintDataV:Vector.<BSButtonHintData>) : void
 		{
 			this._buttonHintDataV.forEach(function(item:BSButtonHintData, index:int, vector:Vector.<BSButtonHintData>):*
@@ -147,12 +147,12 @@ package Shared.AS3
 			},this);
 			this.CreateButtonHints();
 		}
-		
+
 		public function onButtonHintDataDirtyEvent(arEvent:Event) : void
 		{
 			SetIsDirty();
 		}
-		
+
 		private function CreateButtonHints() : *
 		{
 			visible = false;
@@ -173,7 +173,7 @@ package Shared.AS3
 			}
 			SetIsDirty();
 		}
-		
+
 		override public function redrawUIComponent() : void
 		{
 			var curButtonHelp:BSButtonHint = null;

@@ -103,7 +103,7 @@ package Shared.AS3
 
 		public function BSButtonHint()
 		{
-			trace("[BSButtonHint] (CTOR)");
+			// trace("[BSButtonHint] (CTOR)");
 			super();
 			visible = false;
 			mouseChildren = false;
@@ -278,7 +278,7 @@ package Shared.AS3
 
 		public function onTextClick(event:MouseEvent) : void
 		{
-			trace("BSButtonHint::onTextClick");
+			// trace("BSButtonHint::onTextClick");
 			if(!this.ButtonDisabled && this.ButtonVisible)
 			{
 				this._buttonHintData.onTextClick();
@@ -315,13 +315,13 @@ package Shared.AS3
 
 		private function onMouseOver(event:MouseEvent) : *
 		{
-			trace("BSButtonHint::onMouseOver");
+			// trace("BSButtonHint::onMouseOver");
 			this.bMouseOver = true;
 		}
 
 		protected function onMouseOut(event:MouseEvent) : *
 		{
-			trace("BSButtonHint::onMouseOut");
+			// trace("BSButtonHint::onMouseOut");
 			this.bMouseOver = false;
 		}
 

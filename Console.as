@@ -60,7 +60,7 @@ package {
 		private var defaultSettings:Object;
 
 		public function Console() {
-			trace("[Console:Constructor] created");
+			// trace("[Console:Constructor] created");
 			Commands = new Array();
 			super();
 			BGSCodeObj = new Object();
@@ -130,7 +130,7 @@ package {
 			settings = new StupidINI("ConsoleHistory", defaultSettings);
 			settings.Load(Initialize);
 
-			trace("[Console:Constructor] complete");
+			// trace("[Console:Constructor] complete");
 		}
 
 		// public function onF4SEObjCreated(codeObject:Object):void
@@ -144,12 +144,12 @@ package {
 		}
 
 		private function Initialize():void {
-			trace("[Console:INI] Settings:" + settings.Dump());
+			// trace("[Console:INI] Settings:" + settings.Dump());
 
 			var iniTogglePanelsKey:String = settings.GetString("Main", "TogglePanelsKey");
 			if (iniTogglePanelsKey && Keyboard[iniTogglePanelsKey] is uint) {
 				togglePanelsKey = Keyboard[iniTogglePanelsKey];
-				trace("[Console:INI] TogglePanelsKey set to " + togglePanelsKey);
+				// trace("[Console:INI] TogglePanelsKey set to " + togglePanelsKey);
 			}
 
 			Redraw();
@@ -195,7 +195,7 @@ package {
 
 			var infoTextHeight:Number = InfoBox_tf.textHeight + 5;
 
-			trace("[Console:Redraw] infoTextHeight=" + infoTextHeight + " infoMaxHeight=" + infoMaxHeight + " backgroundHeight=" + Background.height);
+			// trace("[Console:Redraw] infoTextHeight=" + infoTextHeight + " infoMaxHeight=" + infoMaxHeight + " backgroundHeight=" + Background.height);
 
 			if (infoTextHeight > infoMaxHeight) {
 				InfoBox_tf.y = infoMaxTop;
@@ -219,7 +219,7 @@ package {
 
 			SetCommandPromptEx(null, null);
 
-			trace("[Console:Redraw] finish");
+			// trace("[Console:Redraw] finish");
 
 			// todo: right now those are fixed
 			// FirstExtraInfoPanel_mc.y = SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
@@ -350,28 +350,28 @@ package {
 
 		// fn called from native
 		public function set historyCharBufferSize(param1:uint):* {
-			trace('[Console:NativeCall] set historyCharBufferSize ' + param1);
+			// trace('[Console:NativeCall] set historyCharBufferSize ' + param1);
 			HistoryCharBufferSize = param1;
 		}
 
 		// fn called from native, deined
 		public function set historyTextColor(param1:uint):* {
-			trace('[Console:NativeCall] set historyTextColor ' + param1);
+			// trace('[Console:NativeCall] set historyTextColor ' + param1);
 		}
 
 		// fn called from native, deined
 		public function set textColor(param1:uint):* {
-			trace('[Console:NativeCall] set textColor ' + param1);
+			// trace('[Console:NativeCall] set textColor ' + param1);
 		}
 
 		// fn called from native, deined
 		public function set textSize(bgsSize:uint):* {
-			trace('[Console:NativeCall] set textSize ' + bgsSize);
+			// trace('[Console:NativeCall] set textSize ' + bgsSize);
 		}
 
 		// this is the first method the native code calls when showing the console
 		public function set size(percent:Number):* {
-			trace('[Console:NativeCall] set size ' + percent);
+			// trace('[Console:NativeCall] set size ' + percent);
 			// hack: native code somehow sets StageScaleMode.NO_SCALE
 			// we simply reset it to SHOW_ALL, so it scales with resolution
 			// this only happens once
@@ -381,7 +381,7 @@ package {
 		}
 
 		public function Show():* {
-			trace('[Console:NativeCall] Show');
+			// trace('[Console:NativeCall] Show');
 			if (!Animating) {
 				parent.y = OriginalHeight;
 
@@ -398,7 +398,7 @@ package {
 		}
 
 		public function Hide():* {
-			trace('[Console:NativeCall] Hide');
+			// trace('[Console:NativeCall] Hide');
 			if (!Animating) {
 				(parent as MovieClip).gotoAndPlay("hide_anim");
 				stage.focus = null;
@@ -408,7 +408,7 @@ package {
 		}
 
 		public function HideComplete():* {
-			trace('[Console] HideComplete');
+			// trace('[Console] HideComplete');
 			Shown = false;
 			Animating = false;
 			Hiding = false;
@@ -448,7 +448,7 @@ package {
 		}
 
 		public function SetHistorySize(size:uint):* {
-			trace("[Console:SetHistorySize] " + size);
+			// trace("[Console:SetHistorySize] " + size);
 			PREVIOUS_COMMANDS = size;
 		}
 
@@ -486,7 +486,7 @@ package {
 			promptHtml = promptHtml.replace(/\$Path\b/g, path);
 			promptHtml = "<font size='" + fontSize + "' color='" + ColorToHex(fontColor) + "'>" + promptHtml + "</font>";
 
-			trace("[Console] SetCommandPromptEx `" + promptHtml + "`");
+			// trace("[Console] SetCommandPromptEx `" + promptHtml + "`");
 
 			CommandPromptEx_tf.htmlText = promptHtml;
 
@@ -499,7 +499,7 @@ package {
 
 		// called by native code. denied.
 		public function SetCommandPrompt(dashDashDashPrompt:String):* {
-			trace("[Console:NativeCall] SetCommandPrompt `" + dashDashDashPrompt + "`");
+			// trace("[Console:NativeCall] SetCommandPrompt `" + dashDashDashPrompt + "`");
 			CommandPrompt_tf.text = dashDashDashPrompt;
 		}
 

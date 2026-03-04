@@ -185,7 +185,7 @@ package Shared
 				{
 					if(this[i] is MovieClip && this[i] != this)
 					{
-						trace(this[i]);
+						// trace(this[i]);
 						this[i].showMovieClips();
 					}
 				}
