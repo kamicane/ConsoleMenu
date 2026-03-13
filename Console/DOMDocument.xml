@@ -11,7 +11,7 @@
      <symbols>
           <Include href="Background.xml" loadImmediate="false" itemID="5999f62e-00000277" lastModified="1772540903"/>
           <Include href="Console.xml" itemID="5999f623-00000276" lastModified="1773438096"/>
-          <Include href="ConsoleAnimationHolder.xml" itemID="5999f98e-000002e5" lastModified="1773439145"/>
+          <Include href="ConsoleAnimationHolder.xml" itemID="5999f98e-000002e5" lastModified="1773440291"/>
           <Include href="Line_sym.xml" loadImmediate="false" itemID="69a6d417-000007ad" lastModified="1772541119"/>
           <Include href="Shapes/Shape 19.xml" itemIcon="1" loadImmediate="false" itemID="566a5a0a-000000fa" lastModified="1449810442"/>
           <Include href="Shapes/Shape 44.xml" itemIcon="1" loadImmediate="false" itemID="566a5a09-000000ce" lastModified="1449810441"/>
@@ -119,6 +119,9 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="24267" publishTime="1773440318"/>
+          <PublishItem publishSize="24529" publishTime="1773440010"/>
+          <PublishItem publishSize="24532" publishTime="1773439941"/>
           <PublishItem publishSize="24584" publishTime="1773439647"/>
           <PublishItem publishSize="24584" publishTime="1773439413"/>
           <PublishItem publishSize="24584" publishTime="1773439406"/>
@@ -136,8 +139,5 @@
           <PublishItem publishSize="24462" publishTime="1773437187"/>
           <PublishItem publishSize="24451" publishTime="1773437089"/>
           <PublishItem publishSize="24461" publishTime="1773436962"/>
-          <PublishItem publishSize="24456" publishTime="1773436893"/>
-          <PublishItem publishSize="24462" publishTime="1773431376"/>
-          <PublishItem publishSize="24482" publishTime="1773431193"/>
      </publishHistory>
 </DOMDocument>
