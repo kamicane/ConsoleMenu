@@ -11,7 +11,6 @@ package {
 	import Shared.AS3.BSScrollingList;
 	import Shared.IMenu;
 	import flash.display.MovieClip;
-	// import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
@@ -58,6 +57,11 @@ package {
 		private var settings:StupidINI;
 
 		private var defaultSettings:Object;
+
+		private var fullscreenWidth:uint = 0;
+		private var fullscreenHeight:uint = 0;
+
+		private var horizontalPadding:uint = 30;
 
 		public function Console() {
 			// trace("[Console:Constructor] created");
@@ -151,8 +155,6 @@ package {
 				togglePanelsKey = Keyboard[iniTogglePanelsKey];
 				// trace("[Console:INI] TogglePanelsKey set to " + togglePanelsKey);
 			}
-
-			Redraw();
 		}
 
 		private function SetTextFormat(textField:TextField, size:Number, color:uint):void {
@@ -164,8 +166,14 @@ package {
 		}
 
 		private function Redraw():void {
+			// trace("[Console:Redraw:StageSize] " + stage.stageWidth + "x" + stage.stageHeight);
+			// trace("[Console:Redraw:ScreenSize] " + fullscreenWidth + "x" + fullscreenHeight);
+			parent.x = -((stage.stageWidth - OriginalWidth) / 2);
+
+			Background.width = stage.stageWidth;
+
 			var screenPercent:Number = settings.GetNumber("Style", "ScreenPercent");
-			Background.height = OriginalHeight * (screenPercent / 100);
+			Background.height = stage.stageHeight * (screenPercent / 100);
 
 			var fontSize:Number = settings.GetNumber("Style", "FontSize");
 			var titleFontSize:Number = settings.GetNumber("Style", "TitleFontSize");
@@ -178,7 +186,12 @@ package {
 			var selectionBackgroundColor:uint = settings.GetColor("Style", "SelectionBackgroundColor");
 			var infoBoxFontColor:uint = settings.GetColor("Style", "InfoBoxFontColor");
 
+			CurrentSelection.x = horizontalPadding;
+			CurrentSelection.width = stage.stageWidth - (horizontalPadding * 2);
 			CurrentSelection.y = CurrentSelectionYOffset - Background.height;
+
+			CommandHistory.x = horizontalPadding;
+			CommandHistory.width = stage.stageWidth - (horizontalPadding * 2);
 			CommandHistory.y = CurrentSelection.y + CurrentSelection.height;
 
 			CommandHistory.height = CommandEntry.y - CommandHistory.y;
@@ -208,6 +221,8 @@ package {
 
 			InfoBox_tf.text = "";
 
+			InfoBox_tf.x = stage.stageWidth - InfoBox_tf.width - horizontalPadding;
+
 			// End InfoBox
 
 			SetTextFormat(CurrentSelection, titleFontSize, titleFontColor);
@@ -221,8 +236,9 @@ package {
 
 			// trace("[Console:Redraw] finish");
 
-			// todo: right now those are fixed
-			// FirstExtraInfoPanel_mc.y = SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 10 - stageHeight;
+			FirstExtraInfoPanel_mc.y = SecondExtraInfoPanel_mc.y = ThirdExtraInfoPanel_mc.y = 40 - stage.stageHeight;
+
+			// todo: right now those are fixed height
 			// FirstExtraInfoPanel_mc.height = SecondExtraInfoPanel_mc.height = ThirdExtraInfoPanel_mc.height = stageHeight - Background.height - 10;
 		}
 
@@ -376,14 +392,22 @@ package {
 			// we simply reset it to SHOW_ALL, so it scales with resolution
 			// this only happens once
 			if (stage.scaleMode != StageScaleMode.SHOW_ALL) {
+				// trace("[Console:ScreenSize] " + stage.stageWidth + "x" + stage.stageHeight);
+
+				// unused, for now
+				fullscreenWidth = stage.stageWidth;
+				fullscreenHeight = stage.stageHeight;
+
 				stage.scaleMode = StageScaleMode.SHOW_ALL;
+
+				Redraw();
 			}
 		}
 
 		public function Show():* {
-			// trace('[Console:NativeCall] Show');
+			// trace('[Console:NativeCall] Show: ' + stage.stageHeight + " parenty = " + parent.y);
 			if (!Animating) {
-				parent.y = OriginalHeight;
+				parent.y = OriginalHeight + ((stage.stageHeight - OriginalHeight) / 2);
 
 				(parent as MovieClip).gotoAndPlay("show_anim");
 				stage.focus = CommandEntry;
@@ -415,8 +439,9 @@ package {
 			BGSCodeObj.onHideComplete();
 		}
 
+		// never called
 		public function Minimize():* {
-			parent.y = OriginalHeight - CommandHistory.y;
+			// trace("[Console:Minimize]");
 		}
 
 		public function PreviousCommand():* {
@@ -494,7 +519,7 @@ package {
 
 			CommandPromptEx_tf.width = promptWidth + 5;
 			CommandEntry.x = CommandPromptEx_tf.x + CommandPromptEx_tf.width;
-			CommandEntry.width = OriginalWidth - CommandEntry.x - 30;
+			CommandEntry.width = stage.stageWidth - CommandEntry.x - horizontalPadding;
 		}
 
 		// called by native code. denied.

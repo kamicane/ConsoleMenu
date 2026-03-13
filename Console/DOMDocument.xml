@@ -10,8 +10,8 @@
      </fonts>
      <symbols>
           <Include href="Background.xml" loadImmediate="false" itemID="5999f62e-00000277" lastModified="1772540903"/>
-          <Include href="Console.xml" itemID="5999f623-00000276" lastModified="1772566629"/>
-          <Include href="ConsoleAnimationHolder.xml" itemID="5999f98e-000002e5" lastModified="1772417104"/>
+          <Include href="Console.xml" itemID="5999f623-00000276" lastModified="1773438096"/>
+          <Include href="ConsoleAnimationHolder.xml" itemID="5999f98e-000002e5" lastModified="1773439145"/>
           <Include href="Line_sym.xml" loadImmediate="false" itemID="69a6d417-000007ad" lastModified="1772541119"/>
           <Include href="Shapes/Shape 19.xml" itemIcon="1" loadImmediate="false" itemID="566a5a0a-000000fa" lastModified="1449810442"/>
           <Include href="Shapes/Shape 44.xml" itemIcon="1" loadImmediate="false" itemID="566a5a09-000000ce" lastModified="1449810441"/>
@@ -119,25 +119,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="24107" publishTime="1772600415"/>
-          <PublishItem publishSize="2506" publishTime="1772600313"/>
-          <PublishItem publishSize="2506" publishTime="1772597220"/>
-          <PublishItem publishSize="24101" publishTime="1772593418"/>
-          <PublishItem publishSize="24697" publishTime="1772575823"/>
-          <PublishItem publishSize="24662" publishTime="1772573949"/>
-          <PublishItem publishSize="24661" publishTime="1772573812"/>
-          <PublishItem publishSize="24939" publishTime="1772568714"/>
-          <PublishItem publishSize="24936" publishTime="1772568604"/>
-          <PublishItem publishSize="24941" publishTime="1772568433"/>
-          <PublishItem publishSize="24925" publishTime="1772568361"/>
-          <PublishItem publishSize="24892" publishTime="1772568192"/>
-          <PublishItem publishSize="24906" publishTime="1772568135"/>
-          <PublishItem publishSize="24908" publishTime="1772568094"/>
-          <PublishItem publishSize="24964" publishTime="1772568018"/>
-          <PublishItem publishSize="24887" publishTime="1772567464"/>
-          <PublishItem publishSize="24881" publishTime="1772567402"/>
-          <PublishItem publishSize="24881" publishTime="1772567003"/>
-          <PublishItem publishSize="24834" publishTime="1772566324"/>
-          <PublishItem publishSize="24829" publishTime="1772566130"/>
+          <PublishItem publishSize="24584" publishTime="1773439647"/>
+          <PublishItem publishSize="24584" publishTime="1773439413"/>
+          <PublishItem publishSize="24584" publishTime="1773439406"/>
+          <PublishItem publishSize="24561" publishTime="1773439152"/>
+          <PublishItem publishSize="24536" publishTime="1773438713"/>
+          <PublishItem publishSize="24535" publishTime="1773438580"/>
+          <PublishItem publishSize="24524" publishTime="1773438473"/>
+          <PublishItem publishSize="24526" publishTime="1773438442"/>
+          <PublishItem publishSize="24522" publishTime="1773438292"/>
+          <PublishItem publishSize="24480" publishTime="1773438167"/>
+          <PublishItem publishSize="24523" publishTime="1773438017"/>
+          <PublishItem publishSize="24522" publishTime="1773437963"/>
+          <PublishItem publishSize="24447" publishTime="1773437403"/>
+          <PublishItem publishSize="24455" publishTime="1773437349"/>
+          <PublishItem publishSize="24462" publishTime="1773437187"/>
+          <PublishItem publishSize="24451" publishTime="1773437089"/>
+          <PublishItem publishSize="24461" publishTime="1773436962"/>
+          <PublishItem publishSize="24456" publishTime="1773436893"/>
+          <PublishItem publishSize="24462" publishTime="1773431376"/>
+          <PublishItem publishSize="24482" publishTime="1773431193"/>
      </publishHistory>
 </DOMDocument>
